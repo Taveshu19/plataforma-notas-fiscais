@@ -1,0 +1,49 @@
+name: Testes e demonstração
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Regras das aprovações e compras
+        working-directory: codigo/site
+        run: node --test copia-painel/requisitos.test.cjs
+      - name: Painel da TAG
+        working-directory: codigo/tag/notas-fiscais
+        run: npm test
+      - name: Monta a demonstração (falha se citar o ambiente real)
+        run: node codigo/montar-demo.mjs
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
+        with:
+          path: demo
+
+  publicar:
+    # GitHub Pages só funciona com o repositório público (no plano gratuito).
+    if: github.event_name != 'pull_request' && github.event.repository.private == false
+    needs: testes
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4
