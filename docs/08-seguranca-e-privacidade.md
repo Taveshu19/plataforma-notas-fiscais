@@ -3,13 +3,13 @@
 ## Camadas de proteção
 
 ```mermaid
-flowchart LR
+flowchart TD
   U["Pessoa no navegador"] -->|"login (Supabase Auth)"| T["token JWT"]
-  T --> RPC["Funções SQL<br/>SECURITY DEFINER<br/>perfil + etapa + versão"]
-  T --> RLS["RLS em todas as tabelas<br/>(167 políticas)"]
-  T --> EF["Edge Functions<br/>validam o token ou a chave"]
-  EF -->|"segredos (secrets, Vault)"| EXT["IA, Graph, Worker"]
+  T --> RPC["Funções SQL<br/>perfil, etapa e versão"]
+  T --> RLS["RLS em todas as tabelas<br/>167 políticas"]
+  T --> EF["Edge Functions<br/>validam token ou chave"]
   RPC & RLS --> DB[("Postgres")]
+  EF -->|"segredos no servidor"| EXT["IA, Graph, Worker"]
 ```
 
 1. **Login:** Supabase Auth, com contas criadas pela administração ou por convite. A recuperação de senha é própria: o e-mail sai pela caixa da empresa, com limite de pedidos e resposta que não revela se o e-mail tem conta.

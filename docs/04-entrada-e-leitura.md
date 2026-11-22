@@ -3,19 +3,18 @@
 Do e-mail do fornecedor até uma linha conferida na fila do painel.
 
 ```mermaid
-flowchart LR
-  E["E-mail na caixa<br/>da área"] --> PA["Power Automate<br/>fluxo 'Notas'"]
-  PA -->|anexos| SP["SharePoint<br/>pasta de entrada"]
+flowchart TD
+  E["E-mail na caixa da área"] --> PA["Power Automate (fluxo Notas)"]
+  PA -->|"anexos"| SP["SharePoint: pasta de entrada"]
   PA -->|"e-mail só com link"| J["LINK_DIRETO_*.json"]
-  SP --> OD["OneDrive<br/>(pasta local)"]
-  J --> OD
-  OD -->|"vigia de pasta<br/>File System Access API"| P["Painel"]
+  SP & J --> OD["OneDrive: pasta local"]
+  OD -->|"vigia de pasta"| P["Painel"]
   P --> H{"hash do arquivo<br/>já registrado?"}
-  H -- sim --> X["ignora (outra pessoa<br/>já pegou)"]
-  H -- não --> L["leitura em cascata"]
-  L --> F["fila 'Na fila'<br/>com avisos"]
+  H -->|"sim"| X["ignora: outra pessoa já pegou"]
+  H -->|"não"| L["leitura em cascata"]
+  L --> F["fila, com avisos"]
   F -->|"equipe confere e envia"| A["Aprovações"]
-  F -->|"saída"| S["pasta de saída<br/>ano/mês, nome padrão"]
+  F -->|"saída"| S["pasta de saída, por ano e mês"]
 ```
 
 ## 1. Chegada

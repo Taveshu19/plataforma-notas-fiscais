@@ -11,18 +11,17 @@ Reescrever levaria semanas. Copiar e colar código criaria três versões diverg
 O painel original continua sendo a fonte. Os **geradores** (scripts Node, sem dependências) leem o original e montam cada painel final:
 
 ```mermaid
-flowchart LR
-  O["Painel original<br/>paineis-originais/…/index.html"] --> G1["montar-copia.mjs"]
-  O --> G2["producao/homologacao/montar.mjs"]
-  O2["Painel original<br/>da Engenharia"] --> G3["montar-copia-engenharia.mjs"]
-  M["Módulos novos<br/>areas-novas.js · contratos-compras-expansao.js<br/>regras-expansao.js · CSS"] --> G1 & G2 & G3
-  DB1["demo-banco.js<br/>(banco falso)"] --> G1 & G3
-  DB2["adaptador-producao.js<br/>(banco real)"] --> G2
-  G1 --> D1["Demonstração Expansão"]
-  G3 --> D2["Demonstração Engenharia"]
-  G2 --> P1["Produção Expansão"]
-  P1 & P2["Produção Engenharia"] & TAG["TAG"] & MENU["Menu"] --> OF["publicados/montar-oficial.mjs<br/>site oficial"]
+flowchart TD
+  O["Painéis originais<br/>Expansão e Engenharia"] --> G["Geradores<br/>trocas por trechos exatos"]
+  M["Módulos novos<br/>Aprovações, Compras, Contratos, Projetos"] --> G
+  G -->|"com o banco falso"| D["Demonstrações<br/>Expansão e Engenharia"]
+  G -->|"com o adaptador do banco real"| P["Produção<br/>Expansão e Engenharia"]
+  P --> OF["montar-oficial.mjs<br/>site oficial"]
+  T["TAG"] --> OF
+  MN["Menu"] --> OF
 ```
+
+Os geradores são `copia-painel/montar-copia.mjs` (demonstração da Expansão), `copia-engenharia/montar-copia-engenharia.mjs` (demonstração da Engenharia), `producao/homologacao/montar.mjs` e `producao/engenharia/montar.mjs` (produção). O banco falso é `demo-banco.js`, e o adaptador do banco real é `adaptador-producao.js`.
 
 Cada gerador faz as mudanças com funções que **exigem achar o trecho exatamente uma vez**:
 

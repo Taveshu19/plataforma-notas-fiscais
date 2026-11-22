@@ -75,35 +75,18 @@ O começo da fase 2 está na [proposta navegável de 05/11](https://taveshu19.gi
 ## Arquitetura
 
 ```mermaid
-flowchart LR
-  subgraph M365["Microsoft 365"]
-    CX["Caixas de e-mail<br/>das áreas"]
-    PA["Power Automate"]
-    SP["SharePoint / OneDrive<br/>pastas de entrada e saída"]
-    GR["Microsoft Graph<br/>envio de e-mail"]
-  end
-  subgraph SITE["Site estático (Netlify)"]
-    P["Portal · Expansão · Engenharia · TAG"]
-  end
-  subgraph SB["Supabase"]
-    DB[("Postgres<br/>2 bancos, RLS")]
-    EF["Edge Functions<br/>(Deno)"]
-    ST["Storage<br/>PDFs"]
-  end
-  IA["OpenRouter<br/>Gemini · Claude"]
-  CF["Cloudflare Worker<br/>PDF de NFS-e"]
-  RPA["Robô de aprovação<br/>do ERP (e-mail)"]
-
-  CX --> PA --> SP
-  SP -- "pasta sincronizada,<br/>lida no navegador" --> P
-  P <-- "dados e tempo real" --> DB
-  P -- "arquivos" --> ST
-  P -- "ler-documento,<br/>assistente" --> EF
-  EF --> IA
-  EF -- "baixar-nota-link" --> CF
-  EF -- "escriturar-painel,<br/>avisos" --> GR
-  GR -- "e-mail [ESCRITURAR]" --> PA
-  RPA --> PA -- "retorno-escrituracao" --> EF
+flowchart TB
+  CX["Caixas de e-mail das áreas"] --> PA["Power Automate"]
+  RPA["Robô de aprovação do ERP"] -->|"e-mail"| PA
+  PA --> SP["SharePoint / OneDrive<br/>pasta de entrada"]
+  SP -->|"lida no navegador"| P["Painéis<br/>Portal · Expansão · Engenharia · TAG"]
+  P <-->|"dados, regras e tempo real"| DB[("Supabase<br/>Postgres + RLS + Storage")]
+  P --> EF["Edge Functions (Deno)"]
+  PA -->|"retorno-escrituracao"| EF
+  EF --> IA["OpenRouter<br/>Gemini · Claude"]
+  EF --> CF["Cloudflare Worker<br/>PDF de prefeitura"]
+  EF --> GR["Microsoft Graph<br/>e-mails"]
+  GR -->|"[ESCRITURAR]"| PA
 ```
 
 - **Front:** páginas únicas em HTML e JavaScript puro, sem framework e sem etapa de build no navegador. As partes novas entram no painel original por **geradores com trechos exatos**: se o original mudar, a montagem para em vez de gerar um painel quebrado ([como funciona](docs/11-build-testes-e-deploy.md)).
@@ -114,22 +97,18 @@ flowchart LR
 ## O caminho de uma nota
 
 ```mermaid
-stateDiagram-v2
-  direction LR
-  [*] --> Lancamento: e-mail com a nota
-  Lancamento --> Analise: equipe confere e envia
-  Analise --> Contrato: é contrato
-  Analise --> ALancar: aprovada
-  Analise --> Fora: não é da área
-  Analise --> Devolvida: devolver com motivo
-  Devolvida --> Analise: lançamento corrigido
-  Contrato --> ALancar: contrato com saldo vinculado
-  ALancar --> AprovacaoPedido: pedido registrado no ERP
-  AprovacaoPedido --> Escrituracao: pedido aprovado
-  Escrituracao --> Encaminhada: SharePoint
-  Escrituracao --> Fiscal: e-mail ao fiscal da unidade
-  Encaminhada --> [*]: retorno do robô registrado
-  Fiscal --> [*]
+flowchart TD
+  L["Lançamento<br/>equipe confere e envia"] --> A["01 · Análise da engenharia"]
+  A -->|"é contrato"| C["02 · Contratos"]
+  A -->|"aprovada"| P["03 · A lançar<br/>pedido no ERP"]
+  A -->|"não é da área"| F["06 · Fora da área"]
+  A -->|"devolver com motivo"| D["Devolvida ao lançamento"]
+  D -->|"corrigida"| A
+  C -->|"contrato com saldo"| P
+  P --> AP["04 · Aprovação do pedido"]
+  AP --> E["05 · Escrituração"]
+  E -->|"SharePoint"| EN["07 · Encaminhada<br/>retorno do robô registrado"]
+  E -->|"e-mail ao fiscal"| FI["07 · Fiscal"]
 ```
 
 Em qualquer etapa a nota pode ser **cancelada**, sempre com motivo. Na Engenharia, a nota com Pagador TAG vai para o painel da TAG. Regras, perfis e exceções estão em [O caminho de uma nota](docs/03-fluxo-da-nota.md).

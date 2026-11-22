@@ -23,21 +23,22 @@ As instruções (`manual.ts`) mandam o agente investigar antes de responder e ci
 ```mermaid
 sequenceDiagram
   participant P as Pessoa
-  participant A as Agente (Claude)
-  participant L as Papel assistente_leitura<br/>(só SELECT)
-  participant V as Validação (regras.ts)
-  participant E as Papel assistente_escrita
-  participant D as Gatilho de desfazer
-  P->>A: "traga de volta a nota 1234"
-  A->>L: investiga (consultas só de leitura)
-  A->>V: propor_mudanca(SQL)
-  V->>V: um comando só? tabela e operação permitidas? sem palavras proibidas?
-  V->>E: ensaio dentro de uma transação, desfeito no final
-  E-->>P: prévia: antes e depois
-  P->>E: Confirmar (a proposta vale 15 minutos)
-  E->>D: executa; o gatilho guarda a linha "antes"
-  D-->>P: feito, com o botão Desfazer
+  participant A as Agente
+  participant L as Leitura
+  participant V as Validação
+  participant E as Escrita
+  P->>A: traga a nota 1234
+  A->>L: investiga (SELECT)
+  A->>V: propor_mudanca
+  V->>V: confere o comando
+  V->>E: ensaio desfeito
+  E-->>P: antes e depois
+  P->>E: Confirmar
+  E->>E: executa e guarda o antes
+  E-->>P: feito, com Desfazer
 ```
+
+"Leitura" e "Escrita" são os papéis `assistente_leitura` e `assistente_escrita` do Postgres. A validação confere se é um comando só, numa tabela permitida e sem palavra proibida. A proposta vale por 15 minutos.
 
 1. **Leitura:** as consultas rodam com o papel `assistente_leitura`, que só tem `SELECT`. Mesmo que o código erre, o papel não deixa passar disso.
 2. **Proposta:** `regras.ts` recusa cedo, com motivo legível:

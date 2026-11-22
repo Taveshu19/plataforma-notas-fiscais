@@ -13,83 +13,45 @@ Dois projetos Supabase (Postgres):
 
 ## Modelo (núcleo)
 
+**O caminho da nota**
+
 ```mermaid
 erDiagram
-  LANCAMENTOS ||--o{ ARQUIVOS_PROCESSADOS : "arquivos (hash único)"
+  LANCAMENTOS ||--o{ ARQUIVOS_PROCESSADOS : "arquivos"
   LANCAMENTOS ||--o| APROVACOES_NOTAS : "segue para"
   LANCAMENTOS ||--o{ HISTORICO_STATUS : "auditoria"
   APROVACOES_NOTAS }o--o| CONTRATOS : "vinculada a"
   APROVACOES_NOTAS ||--o{ APROVACOES_ANEXOS : "arquivos incluídos"
-  FISCAIS_UNIDADE ||--o{ APROVACOES_NOTAS : "destino fiscal"
-  DATASUL_FORNECEDORES ||--o{ APROVACOES_NOTAS : "código do emitente"
-  COMPRAS_REQUISICOES ||--o{ COMPRAS_ANEXOS : "RM, propostas, certificados"
-  COMPRAS_REQUISICOES ||--o{ COMPRAS_HISTORICO : ""
-  COMPRAS_REQUISICOES ||--o{ COMPRAS_AVISOS : "gatilho → e-mail"
-  ASSISTENTE_CONVERSAS ||--o{ ASSISTENTE_PROPOSTAS : ""
-  ASSISTENTE_PROPOSTAS ||--o{ ASSISTENTE_DESFAZER : "linha 'antes'"
-  TAG_NOTAS ||--o{ TAG_EVENTOS : "histórico"
-  CONTROLE_LANCAMENTOS ||--o{ CONTROLE_LANCAMENTOS_EVENTOS : ""
-  CONTROLE_LANCAMENTOS ||--o{ CONTROLE_LANCAMENTOS_COMENTARIOS : ""
-
-  LANCAMENTOS {
-    text id PK
-    text status "Pendente, Em Lançamento, Enviado"
-    text nf
-    text fornecedor
-    text cnpj_fornecedor
-    text unidade
-    numeric valor
-    date vencimento
-    jsonb extracao_original "o que cada leitor trouxe"
-  }
-  ARQUIVOS_PROCESSADOS {
-    bigint id PK
-    text hash UK
-    text lancamento_id FK
-    text path_storage
-    jsonb campos_sugeridos
-  }
-  APROVACOES_NOTAS {
-    text nota_id PK
-    text etapa "check: 11 valores"
-    text narrativa
-    text contrato "Sim ou Não"
-    text expansao "pertence à área"
-    text pedido "número no ERP"
-    text contrato_ref
-    text decisao "retorno da escrituração"
-    jsonb campos "correções do painel"
-    jsonb arquivos_ocultos
-    jsonb historico
-    int versao "controle de concorrência"
-  }
-  CONTRATOS {
-    text item_id PK
-    text nome
-    text unidade
-    numeric valor_fechado
-    text_array aditivos
-    text_array notas
-    jsonb arquivos_itens
-  }
-  COMPRAS_REQUISICOES {
-    uuid id PK
-    text numero
-    text etapa
-    text prioridade
-    int sla_dias
-    date prazo_desejado
-    text comprador
-    text solicitante_email
-  }
-  TAG_NOTAS {
-    text id PK
-    jsonb doc
-    text grupo_id
-  }
 ```
 
-> As colunas mostradas são as principais. Os nomes `monday_*` que aparecem em algumas tabelas são da migração: guardam a referência do item no sistema antigo, como histórico.
+| Tabela | Colunas principais |
+|---|---|
+| `lancamentos` | `id`, `status` (Pendente, Em Lançamento, Enviado), `nf`, `fornecedor`, `cnpj_fornecedor`, `unidade`, `unidade_confirmada`, `valor`, `vencimento`, `extracao_original` (o que cada leitor trouxe) |
+| `arquivos_processados` | `hash` (**único**), `lancamento_id`, `path_storage`, `campos_sugeridos` |
+| `aprovacoes_notas` | `nota_id`, `etapa` (11 valores aceitos), `narrativa`, `contrato`, `expansao` (pertence à área), `pedido` (número no ERP), `contrato_ref`, `decisao` (retorno da escrituração), `campos` (correções do painel), `arquivos_ocultos`, `historico`, `versao` (concorrência) |
+| `contratos` | `item_id`, `nome`, `unidade`, `valor_fechado`, `aditivos`, `notas`, `arquivos_itens` |
+
+Tabelas de apoio do envio: `fiscais_unidade` (fiscal de cada unidade, para o e-mail) e `datasul_fornecedores` (código do emitente no ERP, pelo CNPJ).
+
+**Módulos em volta**
+
+```mermaid
+erDiagram
+  COMPRAS_REQUISICOES ||--o{ COMPRAS_ANEXOS : "RM, propostas"
+  COMPRAS_REQUISICOES ||--o{ COMPRAS_AVISOS : "gatilho e e-mail"
+  TAG_NOTAS ||--o{ TAG_EVENTOS : "histórico"
+```
+
+```mermaid
+erDiagram
+  ASSISTENTE_CONVERSAS ||--o{ ASSISTENTE_PROPOSTAS : "propõe"
+  ASSISTENTE_PROPOSTAS ||--o{ ASSISTENTE_DESFAZER : "linha antes"
+  CONTROLE_LANCAMENTOS ||--o{ CONTROLE_COMENTARIOS : "comentários"
+```
+
+No banco, a tabela de comentários do Controle de Lançamentos se chama `controle_lancamentos_comentarios`.
+
+> Os nomes `monday_*` que aparecem em algumas tabelas são da migração: guardam a referência do item no sistema antigo, como histórico.
 
 ## Padrões usados
 

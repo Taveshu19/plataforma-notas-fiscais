@@ -7,11 +7,10 @@ Em 15 dias, tudo isso passou para o sistema próprio, **sem parar o trabalho das
 ```mermaid
 timeline
   title Migração (novembro de 2026)
-  05/11 : Levantamento dos quadros, colunas e automações : Proposta navegável com dados fictícios
-  06/11 a 14/11 : Telas novas validadas em cópias de demonstração : Espelhos dos quadros no banco
-  16/11 : Auditoria de paridade item por item : Backups e pontos de retorno : Aprovações e TAG no banco real
-  17/11 a 19/11 : Ajustes pedidos pelas equipes : Cópia de todos os arquivos : Corte de todos os vínculos com o quadro antigo
-  20/11 : Entrega ao responsável seguinte
+  05/11 : Levantamento : Proposta navegável
+  06 a 14/11 : Telas na demonstração : Espelhos no banco
+  16/11 : Paridade e backups : Virada
+  19 e 20/11 : Corte total : Entrega
 ```
 
 ## 1. Levantamento (05/11)

@@ -12,19 +12,28 @@ Depois, ela envia por um de três caminhos.
 
 ## Para onde vai cada nota
 
+**Expansão**
+
 ```mermaid
 flowchart TD
-  N["Nota na etapa Escrituração"] --> A{"Área"}
-  A -->|Expansão| E1{"Unidade de envio ao fiscal<br/>ou natureza Remessa?"}
-  E1 -->|sim| FI["E-mail ao fiscal da unidade<br/>→ etapa fiscal"]
-  E1 -->|não| SP["E-mail [ESCRITURAR] para a caixa de quem clicou<br/>→ fluxo dessa pessoa cria o item no SharePoint<br/>→ etapa encaminhada"]
-  A -->|Engenharia| P{"Pagador"}
-  P -->|"qualquer, natureza Remessa"| FI
-  P -->|"Holding, unidade de envio ao fiscal"| FI
-  P -->|"Holding, demais unidades"| SP
-  P -->|"Empresa Exemplo, Parceira, Condomínio"| AZ["E-mail 'Planilha Azul' ao financeiro<br/>com cópia para a escrituração e quem clicou"]
-  P -->|TAG| T["Não escritura: vai para o painel da TAG"]
-  P -->|"outro ou vazio"| NE["Não envia; o painel diz o motivo"]
+  N["Nota na Escrituração"] --> Q{"Unidade de envio ao fiscal<br/>ou natureza Remessa?"}
+  Q -->|"sim"| FI["E-mail ao fiscal da unidade<br/>etapa fiscal"]
+  Q -->|"não"| SP["E-mail [ESCRITURAR] para quem clicou<br/>o fluxo dessa pessoa cria o item no SharePoint<br/>etapa encaminhada"]
+```
+
+**Engenharia**
+
+```mermaid
+flowchart TD
+  N["Nota na Escrituração"] --> R{"Natureza Remessa?"}
+  R -->|"sim"| FI["E-mail ao fiscal"]
+  R -->|"não"| P{"Pagador"}
+  P -->|"Holding"| H{"Unidade de envio<br/>ao fiscal?"}
+  H -->|"sim"| FI
+  H -->|"não"| SP["SharePoint"]
+  P -->|"Empresa Exemplo,<br/>Parceira, Condomínio"| AZ["Planilha Azul<br/>(financeiro)"]
+  P -->|"TAG"| T["Painel da TAG"]
+  P -->|"outro ou vazio"| NE["Não envia<br/>e diz o motivo"]
 ```
 
 | Área | Caso | Destino |
@@ -63,21 +72,23 @@ Seu pedido 131426, foi Rejeitado por <quem> e não seguirá para Escrituração!
 ```mermaid
 sequenceDiagram
   participant R as Robô do ERP
-  participant PA as Power Automate<br/>"Resultado da aprovação"
-  participant F as retorno-escrituracao
-  participant DB as aprovacoes_notas
+  participant PA as Power Automate
+  participant F as Função
+  participant DB as Banco
   R->>PA: e-mail com o resultado
-  PA->>F: POST {assunto, texto}<br/>cabeçalho x-chave-retorno
-  F->>F: confere a chave; lê pedido, resultado, quem e motivo
-  F->>DB: acha a nota pelo número do pedido
-  alt nota em Encaminhadas e ainda sem esse registro
-    F->>DB: decisao = aprovada/recusada + linha no histórico
+  PA->>F: POST com a chave
+  F->>F: lê o e-mail
+  F->>DB: acha a nota pelo pedido
+  alt nota em Encaminhadas
+    F->>DB: decisão e histórico
   else já registrado
-    F-->>PA: ok (nada a fazer)
-  else nota em outra etapa
-    F-->>PA: 409, o retorno fica para quando ela for enviada
+    F-->>PA: ok, nada a fazer
+  else outra etapa
+    F-->>PA: 409, espera o envio
   end
 ```
+
+A função é a `retorno-escrituracao`, e a nota fica em `aprovacoes_notas`. Ela lê no e-mail o pedido, o resultado, quem decidiu e o motivo.
 
 - **Autenticação por chave:** o fluxo manda o segredo `RETORNO_CHAVE` no cabeçalho `x-chave-retorno`. A função não usa login, porque quem chama é um fluxo, e não uma pessoa (`verify_jwt = false`).
 - **Idempotente:** se o mesmo e-mail chegar duas vezes, o segundo não duplica o histórico.

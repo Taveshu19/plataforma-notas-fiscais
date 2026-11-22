@@ -19,8 +19,8 @@ Além do caminho das notas, o sistema tem módulos para o que acontece em volta 
 Requisições de material e serviço, da solicitação à entrega.
 
 ```mermaid
-flowchart LR
-  A["Aguardando Compras"] --> B["Em cotação"] --> C["Aguardando Engenharia"] --> D["Aguardando fechamento"] --> E["Aguardando entrega"] --> F["Entrega concluída"]
+flowchart TD
+  A["01 · Aguardando Compras"] --> B["02 · Em cotação"] --> C["03 · Aguardando Engenharia"] --> D["04 · Aguardando fechamento"] --> E["05 · Aguardando entrega"] --> F["06 · Entrega concluída"]
 ```
 
 Na etapa da engenharia, a proposta pode ser aprovada, receber pedido de ajuste ou ser recusada com motivo. A recusa leva a requisição para o grupo "Recusada".

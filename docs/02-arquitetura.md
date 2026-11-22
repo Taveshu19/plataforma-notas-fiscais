@@ -4,42 +4,19 @@
 
 ```mermaid
 flowchart TB
-  subgraph Navegador["Navegador (Chrome/Edge)"]
-    MENU["Portal de equipes<br/>/"]
-    EXP["Painel Expansão<br/>/expansao/"]
-    ENG["Painel Engenharia<br/>/engenharia/"]
-    TAG["Painel TAG + Controle<br/>/tag/"]
-    PASTA["Pasta sincronizada<br/>(File System Access API)"]
+  M365["Microsoft 365<br/>Power Automate · SharePoint"] -->|"pasta sincronizada"| EXP & ENG
+  ERP["ERP Datasul"] -.->|"e-mail do robô"| M365
+  subgraph NAV["Site único (navegador)"]
+    direction LR
+    MENU["Portal"] ~~~ EXP["Expansão"] ~~~ ENG["Engenharia"] ~~~ TAG["TAG + Controle"]
   end
-  subgraph Supabase
-    subgraph B1["Banco Expansão"]
-      PG1[("Postgres + RLS<br/>48 tabelas")]
-      FN1["10 Edge Functions"]
-    end
-    subgraph B2["Banco Engenharia + TAG"]
-      PG2[("Postgres + RLS<br/>30 tabelas")]
-      FN2["8 Edge Functions"]
-    end
-    STO["Storage<br/>PDFs, anexos"]
-  end
-  subgraph Externos
-    M365["Microsoft 365<br/>Power Automate · SharePoint · Graph"]
-    OR["OpenRouter<br/>Gemini · Claude"]
-    CF["Cloudflare Worker"]
-    ERP["ERP Datasul"]
-  end
-  PASTA --> EXP & ENG
-  EXP <--> PG1
-  ENG <--> PG2
-  TAG -- "/tag/api/* (proxy)" --> FN2
-  TAG -- "Controle de Lançamentos" --> FN1
-  EXP --> FN1
-  ENG --> FN2
-  FN1 & FN2 --> OR
-  FN1 & FN2 --> M365
-  FN1 & FN2 --> CF
-  M365 -- "pasta de entrada" --> PASTA
-  ERP -. "e-mail do robô de aprovação" .-> M365
+  EXP <--> PG1[("Banco Expansão<br/>48 tabelas, RLS")]
+  ENG <--> PG2[("Banco Engenharia + TAG<br/>30 tabelas, RLS")]
+  EXP --> FN1["10 funções<br/>da Expansão"]
+  ENG --> FN2["8 funções<br/>da Engenharia"]
+  TAG -->|"/tag/api/*"| FN2
+  TAG -->|"Controle"| FN1
+  FN1 & FN2 --> EXT["OpenRouter · Microsoft Graph · Cloudflare"]
 ```
 
 ## As peças
@@ -123,32 +100,26 @@ A empresa já recebia notas nas caixas de e-mail e guardava documentos no ShareP
 ```mermaid
 sequenceDiagram
   autonumber
-  participant F as Fornecedor
-  participant PA as Power Automate
-  participant P as Painel (navegador)
-  participant DB as Postgres (RPC + RLS)
-  participant EF as Edge Functions
-  participant IA as Gemini (OpenRouter)
-  participant G as Microsoft Graph
-  participant SP as SharePoint
+  participant M as Microsoft 365
+  participant P as Painel
+  participant DB as Banco
+  participant EF as Funções
   participant R as Robô do ERP
-  F->>PA: e-mail com PDF/XML (ou link)
-  PA->>P: arquivo na pasta sincronizada
-  P->>DB: registra o hash do arquivo (único)
-  P->>EF: ler-documento (PDF)
-  EF->>IA: leitura com JSON Schema
-  IA-->>P: campos + dúvidas
-  P->>DB: lançamento conferido e enviado
-  Note over P,DB: Aprovações: análise → contrato → pedido → aprovação
-  P->>DB: aprovacoes_aprovar / vincular_contrato / registrar_pedido
+  M->>P: nota na pasta
+  P->>DB: hash único
+  P->>EF: ler-documento
+  EF-->>P: campos lidos
+  P->>DB: lançamento
+  Note over P,DB: etapas de aprovação
   P->>EF: escriturar-painel
-  EF->>G: e-mail [ESCRITURAR] com anexos
-  G->>PA: caixa de quem enviou
-  PA->>SP: item da escrituração
-  R->>PA: "Seu pedido N foi Aprovado por …"
-  PA->>EF: retorno-escrituracao (chave no cabeçalho)
-  EF->>DB: resultado no histórico da nota
+  EF->>M: e-mail [ESCRITURAR]
+  M->>M: item no SharePoint
+  R->>M: pedido aprovado
+  M->>EF: retorno-escrituracao
+  EF->>DB: histórico da nota
 ```
+
+O Microsoft 365 aparece como uma peça só: e-mail, Power Automate, SharePoint e Graph.
 
 ## Onde está cada parte no código
 
