@@ -1,0 +1,930 @@
+{
+ "quadro": {
+  "nome": "Atividades",
+  "boardId": "0000000000",
+  "colunas": [
+   {
+    "id": "name",
+    "titulo": "Name",
+    "tipo": "name"
+   },
+   {
+    "id": "subtasks_mkzz2gz2",
+    "titulo": "Subelementos",
+    "tipo": "subtasks"
+   },
+   {
+    "id": "text_mkzz5846",
+    "titulo": "Local",
+    "tipo": "text"
+   },
+   {
+    "id": "text_mkzzcnhq",
+    "titulo": "Departamento",
+    "tipo": "text"
+   },
+   {
+    "id": "text_mm0abhnh",
+    "titulo": "Responsável",
+    "tipo": "text"
+   },
+   {
+    "id": "text_mkzza4bj",
+    "titulo": "Base Bonificação",
+    "tipo": "text"
+   },
+   {
+    "id": "status",
+    "titulo": "Andamento do projeto",
+    "tipo": "status",
+    "cores": {
+     "Cancelado": "#df2f4a",
+     "Concluído": "#00c875",
+     "Em Andamento": "#007eb5",
+     "Não Iniciado": "#9d50dd"
+    }
+   },
+   {
+    "id": "color_mm07hab3",
+    "titulo": "Bonificação",
+    "tipo": "status",
+    "cores": {
+     "Em andamento": "#fdab3d",
+     "Pago": "#00c875",
+     "Não finalizado": "#df2f4a",
+     "Não Bonificado": "#007eb5"
+    }
+   },
+   {
+    "id": "numeric_mkzz9z7v",
+    "titulo": "Duração Planejada",
+    "tipo": "numbers"
+   },
+   {
+    "id": "timerange_mkzz599t",
+    "titulo": "Cronograma Planejado",
+    "tipo": "timeline"
+   },
+   {
+    "id": "numeric_mkzzyep1",
+    "titulo": "Custo Estimado",
+    "tipo": "numbers"
+   },
+   {
+    "id": "numeric_mkzzn5yw",
+    "titulo": "Duração Real",
+    "tipo": "numbers"
+   },
+   {
+    "id": "timerange_mkzztzhx",
+    "titulo": "Cronograma Real",
+    "tipo": "timeline"
+   },
+   {
+    "id": "numeric_mkzzbscs",
+    "titulo": "Custo Real",
+    "tipo": "numbers"
+   }
+  ],
+  "grupos": [
+   {
+    "id": "group_title",
+    "titulo": "Obras/Facilities"
+   },
+   {
+    "id": "group_mkzzh988",
+    "titulo": "Projetos/ Licenciamento"
+   }
+  ],
+  "subColunas": [
+   {
+    "id": "name",
+    "titulo": "Name",
+    "tipo": "name"
+   },
+   {
+    "id": "person",
+    "titulo": "Owner",
+    "tipo": "people"
+   },
+   {
+    "id": "status",
+    "titulo": "Status",
+    "tipo": "status",
+    "cores": {
+     "Em andamento": "#fdab3d",
+     "Feito": "#00c875",
+     "Parado": "#df2f4a"
+    }
+   },
+   {
+    "id": "date0",
+    "titulo": "Date",
+    "tipo": "date"
+   }
+  ],
+  "espelhadoEm": "2026-11-14T10:00:00Z"
+ },
+ "itens": [
+  {
+   "item_id": "ATV-001",
+   "nome": "Reforma do telhado do galpão",
+   "grupo_id": "group_title",
+   "grupo_nome": "Obras/Facilities",
+   "estado": "active",
+   "ordem": 1,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Londrina"
+    },
+    "text_mkzzcnhq": {
+     "t": "Projetos"
+    },
+    "text_mm0abhnh": {
+     "t": "Rafael Souza"
+    },
+    "text_mkzza4bj": {
+     "t": "50%"
+    },
+    "status": {
+     "t": "Não Iniciado"
+    },
+    "color_mm07hab3": {
+     "t": ""
+    },
+    "numeric_mkzz9z7v": {
+     "t": "50"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-02-05 - 2026-04-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "92000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": ""
+    },
+    "timerange_mkzztzhx": {
+     "t": ""
+    },
+    "numeric_mkzzbscs": {
+     "t": ""
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-002",
+   "nome": "Troca do piso da área de carga",
+   "grupo_id": "group_title",
+   "grupo_nome": "Obras/Facilities",
+   "estado": "active",
+   "ordem": 2,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Centro de distribuição"
+    },
+    "text_mkzzcnhq": {
+     "t": "Projetos"
+    },
+    "text_mm0abhnh": {
+     "t": "Camila Torres"
+    },
+    "text_mkzza4bj": {
+     "t": "100%"
+    },
+    "status": {
+     "t": "Em Andamento"
+    },
+    "color_mm07hab3": {
+     "t": ""
+    },
+    "numeric_mkzz9z7v": {
+     "t": "75"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-04-05 - 2026-06-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "8000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": ""
+    },
+    "timerange_mkzztzhx": {
+     "t": ""
+    },
+    "numeric_mkzzbscs": {
+     "t": ""
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-003",
+   "nome": "Pintura da fachada",
+   "grupo_id": "group_title",
+   "grupo_nome": "Obras/Facilities",
+   "estado": "active",
+   "ordem": 3,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Sede administrativa"
+    },
+    "text_mkzzcnhq": {
+     "t": "Manutenção"
+    },
+    "text_mm0abhnh": {
+     "t": "André Castro"
+    },
+    "text_mkzza4bj": {
+     "t": ""
+    },
+    "status": {
+     "t": "Concluído"
+    },
+    "color_mm07hab3": {
+     "t": "Em andamento"
+    },
+    "numeric_mkzz9z7v": {
+     "t": "48"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-05-05 - 2026-07-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "92000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": "53"
+    },
+    "timerange_mkzztzhx": {
+     "t": "2026-05-08 - 2026-08-02"
+    },
+    "numeric_mkzzbscs": {
+     "t": "113971"
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-004",
+   "nome": "Adequação elétrica do quadro geral",
+   "grupo_id": "group_title",
+   "grupo_nome": "Obras/Facilities",
+   "estado": "active",
+   "ordem": 4,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Contagem"
+    },
+    "text_mkzzcnhq": {
+     "t": "Manutenção"
+    },
+    "text_mm0abhnh": {
+     "t": "Camila Torres"
+    },
+    "text_mkzza4bj": {
+     "t": "100%"
+    },
+    "status": {
+     "t": "Não Iniciado"
+    },
+    "color_mm07hab3": {
+     "t": ""
+    },
+    "numeric_mkzz9z7v": {
+     "t": "119"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-05-05 - 2026-07-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "18000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": ""
+    },
+    "timerange_mkzztzhx": {
+     "t": ""
+    },
+    "numeric_mkzzbscs": {
+     "t": ""
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-005",
+   "nome": "Reforma dos vestiários",
+   "grupo_id": "group_title",
+   "grupo_nome": "Obras/Facilities",
+   "estado": "active",
+   "ordem": 5,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Limeira"
+    },
+    "text_mkzzcnhq": {
+     "t": "Manutenção"
+    },
+    "text_mm0abhnh": {
+     "t": "Bruno Nunes"
+    },
+    "text_mkzza4bj": {
+     "t": ""
+    },
+    "status": {
+     "t": "Não Iniciado"
+    },
+    "color_mm07hab3": {
+     "t": ""
+    },
+    "numeric_mkzz9z7v": {
+     "t": "101"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-07-05 - 2026-09-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "18000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": ""
+    },
+    "timerange_mkzztzhx": {
+     "t": ""
+    },
+    "numeric_mkzzbscs": {
+     "t": ""
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-006",
+   "nome": "Ampliação do estacionamento",
+   "grupo_id": "group_title",
+   "grupo_nome": "Obras/Facilities",
+   "estado": "active",
+   "ordem": 6,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Londrina"
+    },
+    "text_mkzzcnhq": {
+     "t": "Projetos"
+    },
+    "text_mm0abhnh": {
+     "t": "André Castro"
+    },
+    "text_mkzza4bj": {
+     "t": ""
+    },
+    "status": {
+     "t": "Cancelado"
+    },
+    "color_mm07hab3": {
+     "t": ""
+    },
+    "numeric_mkzz9z7v": {
+     "t": "87"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-06-05 - 2026-08-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "48000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": ""
+    },
+    "timerange_mkzztzhx": {
+     "t": ""
+    },
+    "numeric_mkzzbscs": {
+     "t": ""
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-007",
+   "nome": "Impermeabilização da laje",
+   "grupo_id": "group_title",
+   "grupo_nome": "Obras/Facilities",
+   "estado": "active",
+   "ordem": 7,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Londrina"
+    },
+    "text_mkzzcnhq": {
+     "t": "Obra"
+    },
+    "text_mm0abhnh": {
+     "t": "Bruno Nunes"
+    },
+    "text_mkzza4bj": {
+     "t": "50%"
+    },
+    "status": {
+     "t": "Concluído"
+    },
+    "color_mm07hab3": {
+     "t": "Em andamento"
+    },
+    "numeric_mkzz9z7v": {
+     "t": "68"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-03-05 - 2026-05-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "18000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": "74"
+    },
+    "timerange_mkzztzhx": {
+     "t": "2026-03-08 - 2026-06-02"
+    },
+    "numeric_mkzzbscs": {
+     "t": "18936"
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-008",
+   "nome": "Instalação de CFTV",
+   "grupo_id": "group_title",
+   "grupo_nome": "Obras/Facilities",
+   "estado": "active",
+   "ordem": 8,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Centro de distribuição"
+    },
+    "text_mkzzcnhq": {
+     "t": "Facilities"
+    },
+    "text_mm0abhnh": {
+     "t": "Paula Duarte"
+    },
+    "text_mkzza4bj": {
+     "t": "50%"
+    },
+    "status": {
+     "t": "Em Andamento"
+    },
+    "color_mm07hab3": {
+     "t": ""
+    },
+    "numeric_mkzz9z7v": {
+     "t": "70"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-06-05 - 2026-08-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "18000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": ""
+    },
+    "timerange_mkzztzhx": {
+     "t": ""
+    },
+    "numeric_mkzzbscs": {
+     "t": ""
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-009",
+   "nome": "Troca das luminárias por LED",
+   "grupo_id": "group_title",
+   "grupo_nome": "Obras/Facilities",
+   "estado": "active",
+   "ordem": 9,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Contagem"
+    },
+    "text_mkzzcnhq": {
+     "t": "Projetos"
+    },
+    "text_mm0abhnh": {
+     "t": "Rafael Souza"
+    },
+    "text_mkzza4bj": {
+     "t": "100%"
+    },
+    "status": {
+     "t": "Concluído"
+    },
+    "color_mm07hab3": {
+     "t": "Não Bonificado"
+    },
+    "numeric_mkzz9z7v": {
+     "t": "46"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-09-05 - 2026-11-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "92000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": "67"
+    },
+    "timerange_mkzztzhx": {
+     "t": "2026-09-08 - 2026-12-02"
+    },
+    "numeric_mkzzbscs": {
+     "t": "101577"
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-010",
+   "nome": "Recuperação do muro de divisa",
+   "grupo_id": "group_title",
+   "grupo_nome": "Obras/Facilities",
+   "estado": "active",
+   "ordem": 10,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Pelotas"
+    },
+    "text_mkzzcnhq": {
+     "t": "Projetos"
+    },
+    "text_mm0abhnh": {
+     "t": "Camila Torres"
+    },
+    "text_mkzza4bj": {
+     "t": "100%"
+    },
+    "status": {
+     "t": "Em Andamento"
+    },
+    "color_mm07hab3": {
+     "t": ""
+    },
+    "numeric_mkzz9z7v": {
+     "t": "51"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-08-05 - 2026-10-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "48000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": ""
+    },
+    "timerange_mkzztzhx": {
+     "t": ""
+    },
+    "numeric_mkzzbscs": {
+     "t": ""
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-011",
+   "nome": "Licença de operação ambiental",
+   "grupo_id": "group_mkzzh988",
+   "grupo_nome": "Projetos/ Licenciamento",
+   "estado": "active",
+   "ordem": 11,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Pelotas"
+    },
+    "text_mkzzcnhq": {
+     "t": "Projetos"
+    },
+    "text_mm0abhnh": {
+     "t": ""
+    },
+    "text_mkzza4bj": {
+     "t": "50%"
+    },
+    "status": {
+     "t": "Em Andamento"
+    },
+    "color_mm07hab3": {
+     "t": ""
+    },
+    "numeric_mkzz9z7v": {
+     "t": "104"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-04-05 - 2026-06-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "75000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": ""
+    },
+    "timerange_mkzztzhx": {
+     "t": ""
+    },
+    "numeric_mkzzbscs": {
+     "t": ""
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-012",
+   "nome": "Projeto de prevenção a incêndio",
+   "grupo_id": "group_mkzzh988",
+   "grupo_nome": "Projetos/ Licenciamento",
+   "estado": "active",
+   "ordem": 12,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Londrina"
+    },
+    "text_mkzzcnhq": {
+     "t": "Obra"
+    },
+    "text_mm0abhnh": {
+     "t": "Rafael Souza"
+    },
+    "text_mkzza4bj": {
+     "t": "50%"
+    },
+    "status": {
+     "t": "Em Andamento"
+    },
+    "color_mm07hab3": {
+     "t": ""
+    },
+    "numeric_mkzz9z7v": {
+     "t": "84"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-03-05 - 2026-05-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "48000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": ""
+    },
+    "timerange_mkzztzhx": {
+     "t": ""
+    },
+    "numeric_mkzzbscs": {
+     "t": ""
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-013",
+   "nome": "Alvará de funcionamento",
+   "grupo_id": "group_mkzzh988",
+   "grupo_nome": "Projetos/ Licenciamento",
+   "estado": "active",
+   "ordem": 13,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Limeira"
+    },
+    "text_mkzzcnhq": {
+     "t": "Manutenção"
+    },
+    "text_mm0abhnh": {
+     "t": "Camila Torres"
+    },
+    "text_mkzza4bj": {
+     "t": ""
+    },
+    "status": {
+     "t": "Concluído"
+    },
+    "color_mm07hab3": {
+     "t": "Não Bonificado"
+    },
+    "numeric_mkzz9z7v": {
+     "t": "104"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-03-05 - 2026-05-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "75000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": "122"
+    },
+    "timerange_mkzztzhx": {
+     "t": "2026-03-08 - 2026-06-02"
+    },
+    "numeric_mkzzbscs": {
+     "t": "69932"
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-014",
+   "nome": "Projeto de drenagem pluvial",
+   "grupo_id": "group_mkzzh988",
+   "grupo_nome": "Projetos/ Licenciamento",
+   "estado": "active",
+   "ordem": 14,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Anápolis"
+    },
+    "text_mkzzcnhq": {
+     "t": "Projetos"
+    },
+    "text_mm0abhnh": {
+     "t": "Rafael Souza"
+    },
+    "text_mkzza4bj": {
+     "t": "100%"
+    },
+    "status": {
+     "t": "Cancelado"
+    },
+    "color_mm07hab3": {
+     "t": ""
+    },
+    "numeric_mkzz9z7v": {
+     "t": "85"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-03-05 - 2026-05-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "34000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": ""
+    },
+    "timerange_mkzztzhx": {
+     "t": ""
+    },
+    "numeric_mkzzbscs": {
+     "t": ""
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-015",
+   "nome": "Renovação do AVCB",
+   "grupo_id": "group_mkzzh988",
+   "grupo_nome": "Projetos/ Licenciamento",
+   "estado": "active",
+   "ordem": 15,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Cascavel"
+    },
+    "text_mkzzcnhq": {
+     "t": "Facilities"
+    },
+    "text_mm0abhnh": {
+     "t": "Bruno Nunes"
+    },
+    "text_mkzza4bj": {
+     "t": ""
+    },
+    "status": {
+     "t": "Concluído"
+    },
+    "color_mm07hab3": {
+     "t": "Não Bonificado"
+    },
+    "numeric_mkzz9z7v": {
+     "t": "23"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-01-05 - 2026-03-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "48000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": "31"
+    },
+    "timerange_mkzztzhx": {
+     "t": "2026-01-08 - 2026-04-02"
+    },
+    "numeric_mkzzbscs": {
+     "t": "57338"
+    }
+   },
+   "subitens": []
+  },
+  {
+   "item_id": "ATV-016",
+   "nome": "Laudo de estanqueidade",
+   "grupo_id": "group_mkzzh988",
+   "grupo_nome": "Projetos/ Licenciamento",
+   "estado": "active",
+   "ordem": 16,
+   "valores": {
+    "subtasks_mkzz2gz2": {
+     "t": ""
+    },
+    "text_mkzz5846": {
+     "t": "Unidade Anápolis"
+    },
+    "text_mkzzcnhq": {
+     "t": "Projetos"
+    },
+    "text_mm0abhnh": {
+     "t": ""
+    },
+    "text_mkzza4bj": {
+     "t": "50%"
+    },
+    "status": {
+     "t": "Em Andamento"
+    },
+    "color_mm07hab3": {
+     "t": ""
+    },
+    "numeric_mkzz9z7v": {
+     "t": "25"
+    },
+    "timerange_mkzz599t": {
+     "t": "2026-05-05 - 2026-07-20"
+    },
+    "numeric_mkzzyep1": {
+     "t": "92000"
+    },
+    "numeric_mkzzn5yw": {
+     "t": ""
+    },
+    "timerange_mkzztzhx": {
+     "t": ""
+    },
+    "numeric_mkzzbscs": {
+     "t": ""
+    }
+   },
+   "subitens": []
+  }
+ ]
+}

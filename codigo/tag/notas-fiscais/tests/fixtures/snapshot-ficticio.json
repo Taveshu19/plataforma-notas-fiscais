@@ -1,0 +1,3144 @@
+{
+ "snapshotAt": "2026-11-14",
+ "source": "dados fictícios gerados por demo-src/dados-ficticios.mjs",
+ "items": [
+  {
+   "id": "d100000",
+   "name": "1000 - Fornecedor Exemplo Alfa Ltda",
+   "nf": "1000",
+   "supplierName": "Fornecedor Exemplo Alfa Ltda",
+   "supplierDoc": "00.000.000/0001-00",
+   "supplierId": "s0",
+   "groupId": "topics",
+   "group": "Holding - Notas pendentes de aprovação",
+   "departmentId": 3,
+   "department": "Jurídico Holding",
+   "payer": [
+    "001 - HOLDING SOROCABA"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Manutenção",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 5160.26,
+   "narrative": "Serviço de manutenção preventiva (demonstração)",
+   "issueDate": "2026-10-07",
+   "dues": [
+    "2026-11-03",
+    "2026-12-03",
+    "2027-01-02",
+    "2027-02-01",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f0",
+     "name": "NF 1000 - Fornecedor Exemplo Alfa Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-06T12:00:00.000Z",
+   "updatedAt": "2026-09-07T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100001",
+   "name": "1037 - Beta Serviços Demonstração ME",
+   "nf": "1037",
+   "supplierName": "Beta Serviços Demonstração ME",
+   "supplierDoc": "00.000.000/0001-01",
+   "supplierId": "s1",
+   "groupId": "topics",
+   "group": "Holding - Notas pendentes de aprovação",
+   "departmentId": 3,
+   "department": "Jurídico Holding",
+   "payer": [
+    "001 - HOLDING SOROCABA"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Serviço",
+   "paymentId": 1,
+   "payment": "Boleto",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": null,
+   "narrative": "Material de escritório (demonstração)",
+   "issueDate": "2026-07-03",
+   "dues": [
+    "2026-07-26",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f1",
+     "name": "NF 1037 - Beta Serviços Demonstração ME.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-11T12:00:00.000Z",
+   "updatedAt": "2026-09-22T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100002",
+   "name": "1074 - Gama Manutenções Fictícias Ltda",
+   "nf": "1074",
+   "supplierName": "Gama Manutenções Fictícias Ltda",
+   "supplierDoc": "00.000.000/0001-02",
+   "supplierId": "s2",
+   "groupId": "topics",
+   "group": "Holding - Notas pendentes de aprovação",
+   "departmentId": 3,
+   "department": "Jurídico Holding",
+   "payer": [
+    "001 - HOLDING SOROCABA"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Material",
+   "paymentId": 4,
+   "payment": "Cartão de crédito",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 16310.92,
+   "narrative": "Taxa mensal de administração (demonstração)",
+   "issueDate": "2026-10-08",
+   "dues": [
+    "2026-11-05",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f2",
+     "name": "NF 1074 - Gama Manutenções Fictícias Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-17T12:00:00.000Z",
+   "updatedAt": "2026-09-26T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100003",
+   "name": "1111 - Delta Construtora Modelo S.A.",
+   "nf": "1111",
+   "supplierName": "Delta Construtora Modelo S.A.",
+   "supplierDoc": "00.000.000/0001-03",
+   "supplierId": "s3",
+   "groupId": "group_mm29vceb",
+   "group": "Empresa Exemplo - Notas pendentes de aprovação",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "EMPRESA EXEMPLO SERVICOS LTDA"
+   ],
+   "address": [
+    "Rua Teste, 450 - Sala 3"
+   ],
+   "addressIds": [],
+   "category": "Consumo Energia",
+   "paymentId": 2,
+   "payment": "Dados bancários",
+   "bank": "Banco Exemplo S.A. · Ag 0001 · C/C 00000-0 · chave PIX fictícia",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 18529.15,
+   "narrative": "Consumo de energia do período (demonstração)",
+   "issueDate": "2026-08-29",
+   "dues": [
+    "2026-09-23",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f3",
+     "name": "NF 1111 - Delta Construtora Modelo S.A..pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-30T12:00:00.000Z",
+   "updatedAt": "2026-08-18T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100004",
+   "name": "1148 - Épsilon Elétrica Exemplo Ltda",
+   "nf": "1148",
+   "supplierName": "Épsilon Elétrica Exemplo Ltda",
+   "supplierDoc": "00.000.000/0001-04",
+   "supplierId": "s4",
+   "groupId": "group_mm29vceb",
+   "group": "Empresa Exemplo - Notas pendentes de aprovação",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "EMPRESA EXEMPLO SERVICOS LTDA"
+   ],
+   "address": [
+    "Rua Exemplo, 100 - Centro"
+   ],
+   "addressIds": [],
+   "category": "Limpeza",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 21645.87,
+   "narrative": "Limpeza e conservação do mês (demonstração)",
+   "issueDate": "2026-07-11",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f4",
+     "name": "NF 1148 - Épsilon Elétrica Exemplo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-19T12:00:00.000Z",
+   "updatedAt": "2026-10-13T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100005",
+   "name": "1185 - Zeta Limpeza Demonstrativa ME",
+   "nf": "1185",
+   "supplierName": "Zeta Limpeza Demonstrativa ME",
+   "supplierDoc": "00.000.000/0001-05",
+   "supplierId": "s5",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 0,
+   "department": "Expansão",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Locações",
+   "paymentId": 2,
+   "payment": "Dados bancários",
+   "bank": "Banco Exemplo S.A. · Ag 0001 · C/C 00000-0 · chave PIX fictícia",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 11975.87,
+   "narrative": "Locação de equipamento (demonstração)",
+   "issueDate": "2026-07-02",
+   "dues": [
+    "2026-07-26",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f5",
+     "name": "NF 1185 - Zeta Limpeza Demonstrativa ME.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-19T12:00:00.000Z",
+   "updatedAt": "2026-09-25T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100006",
+   "name": "1222 - Eta Consultoria Fictícia",
+   "nf": "1222",
+   "supplierName": "Eta Consultoria Fictícia",
+   "supplierDoc": "00.000.000/0001-06",
+   "supplierId": "s6",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 2,
+   "department": "Financeiro Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Travessa Demonstração, 15"
+   ],
+   "addressIds": [],
+   "category": "Taxa ADM",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 6372.94,
+   "narrative": "Reparo emergencial no imóvel (demonstração)",
+   "issueDate": "2026-09-17",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f6",
+     "name": "NF 1222 - Eta Consultoria Fictícia.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-05T12:00:00.000Z",
+   "updatedAt": "2026-08-08T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100007",
+   "name": "1259 - Teta Materiais de Exemplo Ltda",
+   "nf": "1259",
+   "supplierName": "Teta Materiais de Exemplo Ltda",
+   "supplierDoc": "00.000.000/0001-07",
+   "supplierId": "s7",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 7,
+   "department": "Compras Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Suporte TI",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 10515.94,
+   "narrative": "Assessoria técnica contratada (demonstração)",
+   "issueDate": "2026-09-06",
+   "dues": [
+    "2026-09-30",
+    "2026-10-30",
+    "2026-11-29",
+    "2026-12-29",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f7",
+     "name": "NF 1259 - Teta Materiais de Exemplo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-14T12:00:00.000Z",
+   "updatedAt": "2026-09-09T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100008",
+   "name": "1296 - Iota Telecom Exemplo S.A.",
+   "nf": "1296",
+   "supplierName": "Iota Telecom Exemplo S.A.",
+   "supplierDoc": "00.000.000/0001-08",
+   "supplierId": "s8",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 7,
+   "department": "Compras Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Manutenção",
+   "paymentId": 4,
+   "payment": "Cartão de crédito",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": null,
+   "narrative": "Serviço de manutenção preventiva (demonstração)",
+   "issueDate": "2026-08-25",
+   "dues": [
+    "2026-10-11",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f8",
+     "name": "NF 1296 - Iota Telecom Exemplo S.A..pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-21T12:00:00.000Z",
+   "updatedAt": "2026-08-09T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100009",
+   "name": "1333 - Kappa Segurança Modelo Ltda",
+   "nf": "1333",
+   "supplierName": "Kappa Segurança Modelo Ltda",
+   "supplierDoc": "00.000.000/0001-09",
+   "supplierId": "s9",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 3,
+   "department": "Jurídico Holding",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Serviço",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": null,
+   "narrative": "Material de escritório (demonstração)",
+   "issueDate": "2026-10-12",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f9",
+     "name": "NF 1333 - Kappa Segurança Modelo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-21T12:00:00.000Z",
+   "updatedAt": "2026-09-01T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100010",
+   "name": "1370 - Lambda Jardinagem Fictícia",
+   "nf": "1370",
+   "supplierName": "Lambda Jardinagem Fictícia",
+   "supplierDoc": "00.000.000/0001-10",
+   "supplierId": "s10",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Travessa Demonstração, 15"
+   ],
+   "addressIds": [],
+   "category": "Material",
+   "paymentId": 4,
+   "payment": "Cartão de crédito",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 12624.4,
+   "narrative": "Taxa mensal de administração (demonstração)",
+   "issueDate": "2026-08-22",
+   "dues": [
+    "2026-09-17",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f10",
+     "name": "NF 1370 - Lambda Jardinagem Fictícia.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-18T12:00:00.000Z",
+   "updatedAt": "2026-10-17T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100011",
+   "name": "1407 - Mu Engenharia Demonstrativa Ltda",
+   "nf": "1407",
+   "supplierName": "Mu Engenharia Demonstrativa Ltda",
+   "supplierDoc": "00.000.000/0001-11",
+   "supplierId": "s11",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 0,
+   "department": "Expansão",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Consumo Energia",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 13826.87,
+   "narrative": "Consumo de energia do período (demonstração)",
+   "issueDate": "2026-07-21",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f11",
+     "name": "NF 1407 - Mu Engenharia Demonstrativa Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-03T12:00:00.000Z",
+   "updatedAt": "2026-09-23T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100012",
+   "name": "1444 - Nu Transportes Exemplo",
+   "nf": "1444",
+   "supplierName": "Nu Transportes Exemplo",
+   "supplierDoc": "00.000.000/0001-12",
+   "supplierId": "s12",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 2,
+   "department": "Financeiro Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Exemplo, 100 - Centro"
+   ],
+   "addressIds": [],
+   "category": "Limpeza",
+   "paymentId": 5,
+   "payment": "Link de Crédito",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 14508.9,
+   "narrative": "Limpeza e conservação do mês (demonstração)",
+   "issueDate": "2026-07-04",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f12",
+     "name": "NF 1444 - Nu Transportes Exemplo.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-23T12:00:00.000Z",
+   "updatedAt": "2026-10-22T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100013",
+   "name": "1481 - Xi Locações Modelo Ltda",
+   "nf": "1481",
+   "supplierName": "Xi Locações Modelo Ltda",
+   "supplierDoc": "00.000.000/0001-13",
+   "supplierId": "s13",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 6,
+   "department": "RH Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Locações",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 15737.13,
+   "narrative": "Locação de equipamento (demonstração)",
+   "issueDate": "2026-10-07",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f13",
+     "name": "NF 1481 - Xi Locações Modelo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-16T12:00:00.000Z",
+   "updatedAt": "2026-10-26T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100014",
+   "name": "1518 - Fornecedor Exemplo Alfa Ltda",
+   "nf": "1518",
+   "supplierName": "Fornecedor Exemplo Alfa Ltda",
+   "supplierDoc": "00.000.000/0001-14",
+   "supplierId": "s0",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 6,
+   "department": "RH Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Taxa ADM",
+   "paymentId": 4,
+   "payment": "Cartão de crédito",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "",
+   "engineering": "",
+   "status": "",
+   "value": 3539.04,
+   "narrative": "Reparo emergencial no imóvel (demonstração)",
+   "issueDate": "2026-09-01",
+   "dues": [
+    "2026-10-14",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f14",
+     "name": "NF 1518 - Fornecedor Exemplo Alfa Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-27T12:00:00.000Z",
+   "updatedAt": "2026-09-13T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100015",
+   "name": "1555 - Beta Serviços Demonstração ME",
+   "nf": "1555",
+   "supplierName": "Beta Serviços Demonstração ME",
+   "supplierDoc": "00.000.000/0001-15",
+   "supplierId": "s1",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 0,
+   "department": "Expansão",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Suporte TI",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "Falta documentação (demonstração)",
+   "otavio": "Reprovado",
+   "engineering": "",
+   "status": "",
+   "value": 1581.9,
+   "narrative": "Assessoria técnica contratada (demonstração)",
+   "issueDate": "2026-07-06",
+   "dues": [
+    "2026-07-30",
+    "2026-08-29",
+    "2026-09-28",
+    "2026-10-28",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f15",
+     "name": "NF 1555 - Beta Serviços Demonstração ME.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-08T12:00:00.000Z",
+   "updatedAt": "2026-09-15T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100016",
+   "name": "1592 - Gama Manutenções Fictícias Ltda",
+   "nf": "1592",
+   "supplierName": "Gama Manutenções Fictícias Ltda",
+   "supplierDoc": "00.000.000/0001-16",
+   "supplierId": "s2",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 7,
+   "department": "Compras Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Manutenção",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "Falta documentação (demonstração)",
+   "otavio": "Reprovado",
+   "engineering": "",
+   "status": "",
+   "value": 1850.3,
+   "narrative": "Serviço de manutenção preventiva (demonstração)",
+   "issueDate": "2026-09-16",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f16",
+     "name": "NF 1592 - Gama Manutenções Fictícias Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-21T12:00:00.000Z",
+   "updatedAt": "2026-10-17T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100017",
+   "name": "1629 - Delta Construtora Modelo S.A.",
+   "nf": "1629",
+   "supplierName": "Delta Construtora Modelo S.A.",
+   "supplierDoc": "00.000.000/0001-17",
+   "supplierId": "s3",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 7,
+   "department": "Compras Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Serviço",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "Falta documentação (demonstração)",
+   "otavio": "Reprovado",
+   "engineering": "",
+   "status": "",
+   "value": 1840.71,
+   "narrative": "Material de escritório (demonstração)",
+   "issueDate": "2026-08-12",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f17",
+     "name": "NF 1629 - Delta Construtora Modelo S.A..pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-26T12:00:00.000Z",
+   "updatedAt": "2026-09-06T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100018",
+   "name": "1666 - Épsilon Elétrica Exemplo Ltda",
+   "nf": "1666",
+   "supplierName": "Épsilon Elétrica Exemplo Ltda",
+   "supplierDoc": "00.000.000/0001-18",
+   "supplierId": "s4",
+   "groupId": "group_mm2c28pe",
+   "group": "TAG - Notas Fiscais Pendentes de aprovação",
+   "departmentId": 0,
+   "department": "Expansão",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Material",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "Falta documentação (demonstração)",
+   "otavio": "Reprovado",
+   "engineering": "",
+   "status": "",
+   "value": null,
+   "narrative": "Taxa mensal de administração (demonstração)",
+   "issueDate": "2026-07-01",
+   "dues": [
+    "2026-07-24",
+    "2026-08-23",
+    "2026-09-22",
+    "2026-10-22",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f18",
+     "name": "NF 1666 - Épsilon Elétrica Exemplo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-29T12:00:00.000Z",
+   "updatedAt": "2026-10-28T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100019",
+   "name": "1703 - Zeta Limpeza Demonstrativa ME",
+   "nf": "1703",
+   "supplierName": "Zeta Limpeza Demonstrativa ME",
+   "supplierDoc": "00.000.000/0001-19",
+   "supplierId": "s5",
+   "groupId": "group_mm2ct5t8",
+   "group": "TAG - Notas aprovadas",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Teste, 450 - Sala 3"
+   ],
+   "addressIds": [],
+   "category": "Consumo Energia",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "",
+   "value": 14811.74,
+   "narrative": "Consumo de energia do período (demonstração)",
+   "issueDate": "2026-10-12",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f19",
+     "name": "NF 1703 - Zeta Limpeza Demonstrativa ME.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-25T12:00:00.000Z",
+   "updatedAt": "2026-10-11T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100020",
+   "name": "1740 - Eta Consultoria Fictícia",
+   "nf": "1740",
+   "supplierName": "Eta Consultoria Fictícia",
+   "supplierDoc": "00.000.000/0001-20",
+   "supplierId": "s6",
+   "groupId": "group_mm2ct5t8",
+   "group": "TAG - Notas aprovadas",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Exemplo, 100 - Centro"
+   ],
+   "addressIds": [],
+   "category": "Limpeza",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "",
+   "value": 16711.89,
+   "narrative": "Limpeza e conservação do mês (demonstração)",
+   "issueDate": "2026-10-28",
+   "dues": [
+    "2026-12-06",
+    "2027-01-05",
+    "2027-02-04",
+    "2027-03-06",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f20",
+     "name": "NF 1740 - Eta Consultoria Fictícia.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-27T12:00:00.000Z",
+   "updatedAt": "2026-08-01T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100021",
+   "name": "1777 - Teta Materiais de Exemplo Ltda",
+   "nf": "1777",
+   "supplierName": "Teta Materiais de Exemplo Ltda",
+   "supplierDoc": "00.000.000/0001-21",
+   "supplierId": "s7",
+   "groupId": "group_mm2ct5t8",
+   "group": "TAG - Notas aprovadas",
+   "departmentId": 2,
+   "department": "Financeiro Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Avenida Modelo, 2000 - Bairro Fictício"
+   ],
+   "addressIds": [],
+   "category": "Locações",
+   "paymentId": 2,
+   "payment": "Dados bancários",
+   "bank": "Banco Exemplo S.A. · Ag 0001 · C/C 00000-0 · chave PIX fictícia",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "",
+   "value": 7362.58,
+   "narrative": "Locação de equipamento (demonstração)",
+   "issueDate": "2026-09-19",
+   "dues": [
+    "2026-10-19",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f21",
+     "name": "NF 1777 - Teta Materiais de Exemplo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-15T12:00:00.000Z",
+   "updatedAt": "2026-08-02T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100022",
+   "name": "1814 - Iota Telecom Exemplo S.A.",
+   "nf": "1814",
+   "supplierName": "Iota Telecom Exemplo S.A.",
+   "supplierDoc": "00.000.000/0001-22",
+   "supplierId": "s8",
+   "groupId": "group_mm2ct5t8",
+   "group": "TAG - Notas aprovadas",
+   "departmentId": 2,
+   "department": "Financeiro Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Travessa Demonstração, 15"
+   ],
+   "addressIds": [],
+   "category": "Taxa ADM",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "",
+   "value": 2367.1,
+   "narrative": "Reparo emergencial no imóvel (demonstração)",
+   "issueDate": "2026-07-10",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f22",
+     "name": "NF 1814 - Iota Telecom Exemplo S.A..pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-04T12:00:00.000Z",
+   "updatedAt": "2026-10-27T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100023",
+   "name": "1851 - Kappa Segurança Modelo Ltda",
+   "nf": "1851",
+   "supplierName": "Kappa Segurança Modelo Ltda",
+   "supplierDoc": "00.000.000/0001-23",
+   "supplierId": "s9",
+   "groupId": "group_mm2ct5t8",
+   "group": "TAG - Notas aprovadas",
+   "departmentId": 8,
+   "department": "Administrativo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Teste, 450 - Sala 3"
+   ],
+   "addressIds": [],
+   "category": "Suporte TI",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "",
+   "value": 880.29,
+   "narrative": "Assessoria técnica contratada (demonstração)",
+   "issueDate": "2026-08-26",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f23",
+     "name": "NF 1851 - Kappa Segurança Modelo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-01T12:00:00.000Z",
+   "updatedAt": "2026-10-01T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100024",
+   "name": "1888 - Lambda Jardinagem Fictícia",
+   "nf": "1888",
+   "supplierName": "Lambda Jardinagem Fictícia",
+   "supplierDoc": "00.000.000/0001-24",
+   "supplierId": "s10",
+   "groupId": "group_mm2ct5t8",
+   "group": "TAG - Notas aprovadas",
+   "departmentId": 8,
+   "department": "Administrativo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Exemplo, 100 - Centro"
+   ],
+   "addressIds": [],
+   "category": "Manutenção",
+   "paymentId": 1,
+   "payment": "Boleto",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "",
+   "value": 21021.95,
+   "narrative": "Serviço de manutenção preventiva (demonstração)",
+   "issueDate": "2026-10-30",
+   "dues": [
+    "2026-12-03",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f24",
+     "name": "NF 1888 - Lambda Jardinagem Fictícia.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-14T12:00:00.000Z",
+   "updatedAt": "2026-10-20T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100025",
+   "name": "1925 - Mu Engenharia Demonstrativa Ltda",
+   "nf": "1925",
+   "supplierName": "Mu Engenharia Demonstrativa Ltda",
+   "supplierDoc": "00.000.000/0001-25",
+   "supplierId": "s11",
+   "groupId": "group_mm332dfe",
+   "group": "TAG - Aguardando Comprovante",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Avenida Modelo, 2000 - Bairro Fictício"
+   ],
+   "addressIds": [],
+   "category": "Serviço",
+   "paymentId": 2,
+   "payment": "Dados bancários",
+   "bank": "Banco Exemplo S.A. · Ag 0001 · C/C 00000-0 · chave PIX fictícia",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Em andamento",
+   "value": 20322.8,
+   "narrative": "Material de escritório (demonstração)",
+   "issueDate": "2026-10-30",
+   "dues": [
+    "2026-11-29",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f25",
+     "name": "NF 1925 - Mu Engenharia Demonstrativa Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-09T12:00:00.000Z",
+   "updatedAt": "2026-09-10T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100026",
+   "name": "1962 - Nu Transportes Exemplo",
+   "nf": "1962",
+   "supplierName": "Nu Transportes Exemplo",
+   "supplierDoc": "00.000.000/0001-26",
+   "supplierId": "s12",
+   "groupId": "group_mm332dfe",
+   "group": "TAG - Aguardando Comprovante",
+   "departmentId": 6,
+   "department": "RH Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Material",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Em andamento",
+   "value": 15006.41,
+   "narrative": "Taxa mensal de administração (demonstração)",
+   "issueDate": "2026-08-23",
+   "dues": [
+    "2026-09-29",
+    "2026-10-29",
+    "2026-11-28",
+    "2026-12-28",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f26",
+     "name": "NF 1962 - Nu Transportes Exemplo.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-19T12:00:00.000Z",
+   "updatedAt": "2026-08-09T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100027",
+   "name": "1999 - Xi Locações Modelo Ltda",
+   "nf": "1999",
+   "supplierName": "Xi Locações Modelo Ltda",
+   "supplierDoc": "00.000.000/0001-27",
+   "supplierId": "s13",
+   "groupId": "group_mm332dfe",
+   "group": "TAG - Aguardando Comprovante",
+   "departmentId": 3,
+   "department": "Jurídico Holding",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Consumo Energia",
+   "paymentId": 2,
+   "payment": "Dados bancários",
+   "bank": "Banco Exemplo S.A. · Ag 0001 · C/C 00000-0 · chave PIX fictícia",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Em andamento",
+   "value": 21648.29,
+   "narrative": "Consumo de energia do período (demonstração)",
+   "issueDate": "2026-09-22",
+   "dues": [
+    "2026-11-04",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f27",
+     "name": "NF 1999 - Xi Locações Modelo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-26T12:00:00.000Z",
+   "updatedAt": "2026-09-25T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100028",
+   "name": "2036 - Fornecedor Exemplo Alfa Ltda",
+   "nf": "2036",
+   "supplierName": "Fornecedor Exemplo Alfa Ltda",
+   "supplierDoc": "00.000.000/0001-28",
+   "supplierId": "s0",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 3,
+   "department": "Jurídico Holding",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Limpeza",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 12243.13,
+   "narrative": "Limpeza e conservação do mês (demonstração)",
+   "issueDate": "2026-08-04",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f28",
+     "name": "NF 2036 - Fornecedor Exemplo Alfa Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p28",
+     "name": "Comprovante 2036.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-08-31T12:00:00.000Z",
+   "updatedAt": "2026-08-02T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100029",
+   "name": "2073 - Beta Serviços Demonstração ME",
+   "nf": "2073",
+   "supplierName": "Beta Serviços Demonstração ME",
+   "supplierDoc": "00.000.000/0001-29",
+   "supplierId": "s1",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 8,
+   "department": "Administrativo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Avenida Modelo, 2000 - Bairro Fictício"
+   ],
+   "addressIds": [],
+   "category": "Locações",
+   "paymentId": 4,
+   "payment": "Cartão de crédito",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 21281.35,
+   "narrative": "Locação de equipamento (demonstração)",
+   "issueDate": "2026-07-17",
+   "dues": [
+    "2026-08-30",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f29",
+     "name": "NF 2073 - Beta Serviços Demonstração ME.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p29",
+     "name": "Comprovante 2073.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-09-19T12:00:00.000Z",
+   "updatedAt": "2026-09-02T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100030",
+   "name": "2110 - Gama Manutenções Fictícias Ltda",
+   "nf": "2110",
+   "supplierName": "Gama Manutenções Fictícias Ltda",
+   "supplierDoc": "00.000.000/0001-30",
+   "supplierId": "s2",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Travessa Demonstração, 15"
+   ],
+   "addressIds": [],
+   "category": "Taxa ADM",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 10554.28,
+   "narrative": "Reparo emergencial no imóvel (demonstração)",
+   "issueDate": "2026-07-01",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f30",
+     "name": "NF 2110 - Gama Manutenções Fictícias Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p30",
+     "name": "Comprovante 2110.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-08-18T12:00:00.000Z",
+   "updatedAt": "2026-08-16T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100031",
+   "name": "2147 - Delta Construtora Modelo S.A.",
+   "nf": "2147",
+   "supplierName": "Delta Construtora Modelo S.A.",
+   "supplierDoc": "00.000.000/0001-31",
+   "supplierId": "s3",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 7,
+   "department": "Compras Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Suporte TI",
+   "paymentId": 2,
+   "payment": "Dados bancários",
+   "bank": "Banco Exemplo S.A. · Ag 0001 · C/C 00000-0 · chave PIX fictícia",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 6872.35,
+   "narrative": "Assessoria técnica contratada (demonstração)",
+   "issueDate": "2026-07-14",
+   "dues": [
+    "2026-09-11",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f31",
+     "name": "NF 2147 - Delta Construtora Modelo S.A..pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p31",
+     "name": "Comprovante 2147.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-09-16T12:00:00.000Z",
+   "updatedAt": "2026-08-31T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100032",
+   "name": "2184 - Épsilon Elétrica Exemplo Ltda",
+   "nf": "2184",
+   "supplierName": "Épsilon Elétrica Exemplo Ltda",
+   "supplierDoc": "00.000.000/0001-32",
+   "supplierId": "s4",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 2,
+   "department": "Financeiro Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Exemplo, 100 - Centro"
+   ],
+   "addressIds": [],
+   "category": "Manutenção",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 14274.03,
+   "narrative": "Serviço de manutenção preventiva (demonstração)",
+   "issueDate": "2026-09-21",
+   "dues": [
+    "2026-10-26",
+    "2026-11-25",
+    "2026-12-25",
+    "2027-01-24",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f32",
+     "name": "NF 2184 - Épsilon Elétrica Exemplo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p32",
+     "name": "Comprovante 2184.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-09-07T12:00:00.000Z",
+   "updatedAt": "2026-09-01T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100033",
+   "name": "2221 - Zeta Limpeza Demonstrativa ME",
+   "nf": "2221",
+   "supplierName": "Zeta Limpeza Demonstrativa ME",
+   "supplierDoc": "00.000.000/0001-33",
+   "supplierId": "s5",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 6,
+   "department": "RH Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Serviço",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 22003.42,
+   "narrative": "Material de escritório (demonstração)",
+   "issueDate": "2026-10-29",
+   "dues": [
+    "2026-12-20",
+    "2027-01-19",
+    "2027-02-18",
+    "2027-03-20",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f33",
+     "name": "NF 2221 - Zeta Limpeza Demonstrativa ME.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p33",
+     "name": "Comprovante 2221.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-10-05T12:00:00.000Z",
+   "updatedAt": "2026-10-23T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100034",
+   "name": "2258 - Eta Consultoria Fictícia",
+   "nf": "2258",
+   "supplierName": "Eta Consultoria Fictícia",
+   "supplierDoc": "00.000.000/0001-34",
+   "supplierId": "s6",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 0,
+   "department": "Expansão",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Material",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 2816.99,
+   "narrative": "Taxa mensal de administração (demonstração)",
+   "issueDate": "2026-10-23",
+   "dues": [
+    "2026-11-14",
+    "2026-12-14",
+    "2027-01-13",
+    "2027-02-12",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f34",
+     "name": "NF 2258 - Eta Consultoria Fictícia.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p34",
+     "name": "Comprovante 2258.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-09-30T12:00:00.000Z",
+   "updatedAt": "2026-09-20T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100035",
+   "name": "2295 - Teta Materiais de Exemplo Ltda",
+   "nf": "2295",
+   "supplierName": "Teta Materiais de Exemplo Ltda",
+   "supplierDoc": "00.000.000/0001-35",
+   "supplierId": "s7",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 0,
+   "department": "Expansão",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Consumo Energia",
+   "paymentId": 1,
+   "payment": "Boleto",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 2791.4,
+   "narrative": "Consumo de energia do período (demonstração)",
+   "issueDate": "2026-11-07",
+   "dues": [
+    "2027-01-03",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f35",
+     "name": "NF 2295 - Teta Materiais de Exemplo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p35",
+     "name": "Comprovante 2295.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-08-25T12:00:00.000Z",
+   "updatedAt": "2026-10-29T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100036",
+   "name": "2332 - Iota Telecom Exemplo S.A.",
+   "nf": "2332",
+   "supplierName": "Iota Telecom Exemplo S.A.",
+   "supplierDoc": "00.000.000/0001-36",
+   "supplierId": "s8",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Exemplo, 100 - Centro"
+   ],
+   "addressIds": [],
+   "category": "Limpeza",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": null,
+   "narrative": "Limpeza e conservação do mês (demonstração)",
+   "issueDate": "2026-07-21",
+   "dues": [
+    "2026-09-08",
+    "2026-10-08",
+    "2026-11-07",
+    "2026-12-07",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f36",
+     "name": "NF 2332 - Iota Telecom Exemplo S.A..pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p36",
+     "name": "Comprovante 2332.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-08-13T12:00:00.000Z",
+   "updatedAt": "2026-08-12T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100037",
+   "name": "2369 - Kappa Segurança Modelo Ltda",
+   "nf": "2369",
+   "supplierName": "Kappa Segurança Modelo Ltda",
+   "supplierDoc": "00.000.000/0001-37",
+   "supplierId": "s9",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Avenida Modelo, 2000 - Bairro Fictício"
+   ],
+   "addressIds": [],
+   "category": "Locações",
+   "paymentId": 1,
+   "payment": "Boleto",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 17391.74,
+   "narrative": "Locação de equipamento (demonstração)",
+   "issueDate": "2026-10-01",
+   "dues": [
+    "2026-11-04",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f37",
+     "name": "NF 2369 - Kappa Segurança Modelo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p37",
+     "name": "Comprovante 2369.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-09-11T12:00:00.000Z",
+   "updatedAt": "2026-09-09T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100038",
+   "name": "2406 - Lambda Jardinagem Fictícia",
+   "nf": "2406",
+   "supplierName": "Lambda Jardinagem Fictícia",
+   "supplierDoc": "00.000.000/0001-38",
+   "supplierId": "s10",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 3,
+   "department": "Jurídico Holding",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Taxa ADM",
+   "paymentId": 1,
+   "payment": "Boleto",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 18976.55,
+   "narrative": "Reparo emergencial no imóvel (demonstração)",
+   "issueDate": "2026-10-16",
+   "dues": [
+    "2026-11-07",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f38",
+     "name": "NF 2406 - Lambda Jardinagem Fictícia.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p38",
+     "name": "Comprovante 2406.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-08-11T12:00:00.000Z",
+   "updatedAt": "2026-10-18T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100039",
+   "name": "2443 - Mu Engenharia Demonstrativa Ltda",
+   "nf": "2443",
+   "supplierName": "Mu Engenharia Demonstrativa Ltda",
+   "supplierDoc": "00.000.000/0001-39",
+   "supplierId": "s11",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Teste, 450 - Sala 3"
+   ],
+   "addressIds": [],
+   "category": "Suporte TI",
+   "paymentId": 4,
+   "payment": "Cartão de crédito",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 3640.76,
+   "narrative": "Assessoria técnica contratada (demonstração)",
+   "issueDate": "2026-10-24",
+   "dues": [
+    "2026-12-09",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f39",
+     "name": "NF 2443 - Mu Engenharia Demonstrativa Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p39",
+     "name": "Comprovante 2443.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-10-13T12:00:00.000Z",
+   "updatedAt": "2026-10-14T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100040",
+   "name": "2480 - Nu Transportes Exemplo",
+   "nf": "2480",
+   "supplierName": "Nu Transportes Exemplo",
+   "supplierDoc": "00.000.000/0001-40",
+   "supplierId": "s12",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Exemplo, 100 - Centro"
+   ],
+   "addressIds": [],
+   "category": "Manutenção",
+   "paymentId": 4,
+   "payment": "Cartão de crédito",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 6547.56,
+   "narrative": "Serviço de manutenção preventiva (demonstração)",
+   "issueDate": "2026-08-22",
+   "dues": [
+    "2026-10-11",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f40",
+     "name": "NF 2480 - Nu Transportes Exemplo.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p40",
+     "name": "Comprovante 2480.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-10-12T12:00:00.000Z",
+   "updatedAt": "2026-09-24T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100041",
+   "name": "2517 - Xi Locações Modelo Ltda",
+   "nf": "2517",
+   "supplierName": "Xi Locações Modelo Ltda",
+   "supplierDoc": "00.000.000/0001-41",
+   "supplierId": "s13",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Avenida Modelo, 2000 - Bairro Fictício"
+   ],
+   "addressIds": [],
+   "category": "Serviço",
+   "paymentId": 2,
+   "payment": "Dados bancários",
+   "bank": "Banco Exemplo S.A. · Ag 0001 · C/C 00000-0 · chave PIX fictícia",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 17349,
+   "narrative": "Material de escritório (demonstração)",
+   "issueDate": "2026-09-26",
+   "dues": [
+    "2026-11-08",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f41",
+     "name": "NF 2517 - Xi Locações Modelo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p41",
+     "name": "Comprovante 2517.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-08-05T12:00:00.000Z",
+   "updatedAt": "2026-10-10T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100042",
+   "name": "2554 - Fornecedor Exemplo Alfa Ltda",
+   "nf": "2554",
+   "supplierName": "Fornecedor Exemplo Alfa Ltda",
+   "supplierDoc": "00.000.000/0001-42",
+   "supplierId": "s0",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 8,
+   "department": "Administrativo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Travessa Demonstração, 15"
+   ],
+   "addressIds": [],
+   "category": "Material",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 18748.98,
+   "narrative": "Taxa mensal de administração (demonstração)",
+   "issueDate": "2026-09-28",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f42",
+     "name": "NF 2554 - Fornecedor Exemplo Alfa Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p42",
+     "name": "Comprovante 2554.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-10-28T12:00:00.000Z",
+   "updatedAt": "2026-08-01T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100043",
+   "name": "2591 - Beta Serviços Demonstração ME",
+   "nf": "2591",
+   "supplierName": "Beta Serviços Demonstração ME",
+   "supplierDoc": "00.000.000/0001-43",
+   "supplierId": "s1",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Teste, 450 - Sala 3"
+   ],
+   "addressIds": [],
+   "category": "Consumo Energia",
+   "paymentId": 2,
+   "payment": "Dados bancários",
+   "bank": "Banco Exemplo S.A. · Ag 0001 · C/C 00000-0 · chave PIX fictícia",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 5337.82,
+   "narrative": "Consumo de energia do período (demonstração)",
+   "issueDate": "2026-07-07",
+   "dues": [
+    "2026-07-31",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f43",
+     "name": "NF 2591 - Beta Serviços Demonstração ME.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [
+    {
+     "id": "p43",
+     "name": "Comprovante 2591.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "createdAt": "2026-09-22T12:00:00.000Z",
+   "updatedAt": "2026-08-19T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100044",
+   "name": "2628 - Gama Manutenções Fictícias Ltda",
+   "nf": "2628",
+   "supplierName": "Gama Manutenções Fictícias Ltda",
+   "supplierDoc": "00.000.000/0001-44",
+   "supplierId": "s2",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 1,
+   "department": "Engenharia Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Exemplo, 100 - Centro"
+   ],
+   "addressIds": [],
+   "category": "Limpeza",
+   "paymentId": 1,
+   "payment": "Boleto",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 5401.35,
+   "narrative": "Limpeza e conservação do mês (demonstração)",
+   "issueDate": "2026-09-04",
+   "dues": [
+    "2026-09-29",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f44",
+     "name": "NF 2628 - Gama Manutenções Fictícias Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-05T12:00:00.000Z",
+   "updatedAt": "2026-08-16T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100045",
+   "name": "2665 - Delta Construtora Modelo S.A.",
+   "nf": "2665",
+   "supplierName": "Delta Construtora Modelo S.A.",
+   "supplierDoc": "00.000.000/0001-45",
+   "supplierId": "s3",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 2,
+   "department": "Financeiro Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Avenida Modelo, 2000 - Bairro Fictício"
+   ],
+   "addressIds": [],
+   "category": "Locações",
+   "paymentId": 5,
+   "payment": "Link de Crédito",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 22376.38,
+   "narrative": "Locação de equipamento (demonstração)",
+   "issueDate": "2026-07-23",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f45",
+     "name": "NF 2665 - Delta Construtora Modelo S.A..pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-24T12:00:00.000Z",
+   "updatedAt": "2026-10-03T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100046",
+   "name": "2702 - Épsilon Elétrica Exemplo Ltda",
+   "nf": "2702",
+   "supplierName": "Épsilon Elétrica Exemplo Ltda",
+   "supplierDoc": "00.000.000/0001-46",
+   "supplierId": "s4",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 7,
+   "department": "Compras Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Taxa ADM",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 11652.89,
+   "narrative": "Reparo emergencial no imóvel (demonstração)",
+   "issueDate": "2026-07-13",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f46",
+     "name": "NF 2702 - Épsilon Elétrica Exemplo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-20T12:00:00.000Z",
+   "updatedAt": "2026-09-21T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100047",
+   "name": "2739 - Zeta Limpeza Demonstrativa ME",
+   "nf": "2739",
+   "supplierName": "Zeta Limpeza Demonstrativa ME",
+   "supplierDoc": "00.000.000/0001-47",
+   "supplierId": "s5",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 8,
+   "department": "Administrativo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Teste, 450 - Sala 3"
+   ],
+   "addressIds": [],
+   "category": "Suporte TI",
+   "paymentId": 5,
+   "payment": "Link de Crédito",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 2850.21,
+   "narrative": "Assessoria técnica contratada (demonstração)",
+   "issueDate": "2026-07-15",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f47",
+     "name": "NF 2739 - Zeta Limpeza Demonstrativa ME.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-21T12:00:00.000Z",
+   "updatedAt": "2026-10-22T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100048",
+   "name": "2776 - Eta Consultoria Fictícia",
+   "nf": "2776",
+   "supplierName": "Eta Consultoria Fictícia",
+   "supplierDoc": "00.000.000/0001-48",
+   "supplierId": "s6",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 6,
+   "department": "RH Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Manutenção",
+   "paymentId": 1,
+   "payment": "Boleto",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 5847.43,
+   "narrative": "Serviço de manutenção preventiva (demonstração)",
+   "issueDate": "2026-07-02",
+   "dues": [
+    "2026-07-27",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f48",
+     "name": "NF 2776 - Eta Consultoria Fictícia.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-20T12:00:00.000Z",
+   "updatedAt": "2026-10-13T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100049",
+   "name": "2813 - Teta Materiais de Exemplo Ltda",
+   "nf": "2813",
+   "supplierName": "Teta Materiais de Exemplo Ltda",
+   "supplierDoc": "00.000.000/0001-49",
+   "supplierId": "s7",
+   "groupId": "group_mm2daf7r",
+   "group": "TAG - Pagas",
+   "departmentId": 2,
+   "department": "Financeiro Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Avenida Modelo, 2000 - Bairro Fictício"
+   ],
+   "addressIds": [],
+   "category": "Serviço",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "",
+   "otavio": "Aprovado",
+   "engineering": "",
+   "status": "Pago",
+   "value": 1846.63,
+   "narrative": "Material de escritório (demonstração)",
+   "issueDate": "2026-07-23",
+   "dues": [
+    "2026-08-15",
+    "2026-09-14",
+    "2026-10-14",
+    "2026-11-13",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f49",
+     "name": "NF 2813 - Teta Materiais de Exemplo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-21T12:00:00.000Z",
+   "updatedAt": "2026-10-13T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100050",
+   "name": "2850 - Iota Telecom Exemplo S.A.",
+   "nf": "2850",
+   "supplierName": "Iota Telecom Exemplo S.A.",
+   "supplierDoc": "00.000.000/0001-50",
+   "supplierId": "s8",
+   "groupId": "group_mm2np6s6",
+   "group": "TAG - NFs Reprovados",
+   "departmentId": 3,
+   "department": "Jurídico Holding",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Material",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "Falta documentação (demonstração)",
+   "otavio": "Reprovado",
+   "engineering": "",
+   "status": "",
+   "value": 7301.06,
+   "narrative": "Taxa mensal de administração (demonstração)",
+   "issueDate": "2026-09-28",
+   "dues": [
+    "2026-11-17",
+    "2026-12-17",
+    "2027-01-16",
+    "2027-02-15",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f50",
+     "name": "NF 2850 - Iota Telecom Exemplo S.A..pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-09-29T12:00:00.000Z",
+   "updatedAt": "2026-10-19T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100051",
+   "name": "2887 - Kappa Segurança Modelo Ltda",
+   "nf": "2887",
+   "supplierName": "Kappa Segurança Modelo Ltda",
+   "supplierDoc": "00.000.000/0001-51",
+   "supplierId": "s9",
+   "groupId": "group_mm2np6s6",
+   "group": "TAG - NFs Reprovados",
+   "departmentId": 6,
+   "department": "RH Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [],
+   "addressIds": [],
+   "category": "Consumo Energia",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "Falta documentação (demonstração)",
+   "otavio": "Reprovado",
+   "engineering": "",
+   "status": "",
+   "value": null,
+   "narrative": "Consumo de energia do período (demonstração)",
+   "issueDate": "2026-08-13",
+   "dues": [
+    "2026-10-10",
+    "2026-11-09",
+    "2026-12-09",
+    "2027-01-08",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f51",
+     "name": "NF 2887 - Kappa Segurança Modelo Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-10-18T12:00:00.000Z",
+   "updatedAt": "2026-10-08T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100052",
+   "name": "2924 - Lambda Jardinagem Fictícia",
+   "nf": "2924",
+   "supplierName": "Lambda Jardinagem Fictícia",
+   "supplierDoc": "00.000.000/0001-52",
+   "supplierId": "s10",
+   "groupId": "group_mm2np6s6",
+   "group": "TAG - NFs Reprovados",
+   "departmentId": 2,
+   "department": "Financeiro Empresa Exemplo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Rua Exemplo, 100 - Centro"
+   ],
+   "addressIds": [],
+   "category": "Limpeza",
+   "paymentId": 3,
+   "payment": "Parcelado",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "Falta documentação (demonstração)",
+   "otavio": "Reprovado",
+   "engineering": "",
+   "status": "",
+   "value": 4189.39,
+   "narrative": "Limpeza e conservação do mês (demonstração)",
+   "issueDate": "2026-09-06",
+   "dues": [
+    "2026-10-28",
+    "2026-11-27",
+    "2026-12-27",
+    "2027-01-26",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f52",
+     "name": "NF 2924 - Lambda Jardinagem Fictícia.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-26T12:00:00.000Z",
+   "updatedAt": "2026-09-23T12:00:00.000Z",
+   "mondayUrl": null
+  },
+  {
+   "id": "d100053",
+   "name": "2961 - Mu Engenharia Demonstrativa Ltda",
+   "nf": "2961",
+   "supplierName": "Mu Engenharia Demonstrativa Ltda",
+   "supplierDoc": "00.000.000/0001-53",
+   "supplierId": "s11",
+   "groupId": "group_mm2np6s6",
+   "group": "TAG - NFs Reprovados",
+   "departmentId": 8,
+   "department": "Administrativo",
+   "payer": [
+    "TAG EXEMPLO FUNDO DE INVESTIMENTO IMOBILIARIO"
+   ],
+   "address": [
+    "Avenida Modelo, 2000 - Bairro Fictício"
+   ],
+   "addressIds": [],
+   "category": "Locações",
+   "paymentId": 7,
+   "payment": "Pago por terceiro",
+   "bank": "",
+   "paymentNotes": "",
+   "approverNotes": "Falta documentação (demonstração)",
+   "otavio": "Reprovado",
+   "engineering": "",
+   "status": "",
+   "value": 12426.77,
+   "narrative": "Locação de equipamento (demonstração)",
+   "issueDate": "2026-07-14",
+   "dues": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "files": [
+    {
+     "id": "f53",
+     "name": "NF 2961 - Mu Engenharia Demonstrativa Ltda.pdf",
+     "url": null,
+     "local": "documento-demo.pdf"
+    }
+   ],
+   "proofs": [],
+   "createdAt": "2026-08-11T12:00:00.000Z",
+   "updatedAt": "2026-10-19T12:00:00.000Z",
+   "mondayUrl": null
+  }
+ ]
+}

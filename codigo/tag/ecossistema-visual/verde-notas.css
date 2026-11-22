@@ -1,0 +1,34 @@
+/* Camada verde do Notas Fiscais. Mesma base da Expansão (direcao.css + areas-novas.css):
+   aqui só entra cor. Forma, fontes, posições e tamanhos continuam os da base.
+   Verde da marca do Notas: #0f9d5b (escuro) e #0b7a46 (claro, contraste para texto). */
+
+body.cx-experiencia{
+  --cx-destaque:#0f9d5b;
+  --cx-sinal:#bff3d8;
+  --cx-blue:#6fe3ad;
+  --cx-blue-soft:#143a2a;
+  --cx-green:#6fe3ad;
+  --cx-green-soft:#143a2a;
+}
+:root[data-theme=claro] body.cx-experiencia{
+  --cx-destaque:#0b7a46;
+  --cx-blue:#0b7a46;
+  --cx-blue-soft:#e3f6ec;
+  --cx-green:#0b7a46;
+  --cx-green-soft:#e3f6ec;
+}
+
+/* Símbolo da marca, traço do menu e item ativo */
+body.cx-experiencia .cx-marca-simbolo i{background:#2fd08a}
+body.cx-experiencia .cx-nav-traco{background:#2fd08a}
+body.cx-experiencia #cxAbas button.ativa{background:var(--cx-destaque)}
+body.cx-experiencia #cxAbas button.ativa .cx-num{background:#ffffff26;color:#fff}
+body.cx-experiencia .cx-presenca{background:#2fd08a}
+body.cx-experiencia #cxAbas button.ativa{box-shadow:inset 3px 0 #2fd08a}
+
+/* Destaques de texto, marcadores e foco de teclado */
+body.cx-experiencia .cx-editorial h2 em{color:var(--cx-blue)}
+body.cx-experiencia .cx-etapas button.active{box-shadow:inset 0 -2px var(--cx-destaque)}
+body.cx-experiencia .cx-etapas button.active .cx-etapa-indice{color:var(--cx-blue);opacity:1}
+body.cx-experiencia .cx-quadro thead th{border-bottom:2px solid var(--cx-destaque)}
+body.cx-experiencia :focus-visible{outline-color:var(--cx-destaque)}

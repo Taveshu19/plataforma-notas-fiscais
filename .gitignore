@@ -1,0 +1,21 @@
+# Gerados pela montagem (node codigo/montar-demo.mjs e os geradores de cada painel)
+demo/
+codigo/site/copia-painel/index.html
+codigo/site/copia-engenharia/index.html
+codigo/site/producao/homologacao/index.html
+codigo/site/producao/homologacao/dist/
+codigo/site/producao/engenharia/index.html
+codigo/site/publicados/site/
+codigo/tag/notas-fiscais/demo/
+
+# Dados reais nunca entram aqui
+codigo/tag/notas-fiscais/data/
+*.env
+.env*
+supabase/.temp/
+.temp/
+
+node_modules/
+.DS_Store
+Thumbs.db
+*.tmp

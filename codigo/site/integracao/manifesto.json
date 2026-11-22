@@ -1,0 +1,9 @@
+{
+  "versao": "2026-11-06",
+  "estado": "interface para integração; serviços ainda simulados",
+  "arquivos": {
+    "expansao.css": "c03064d77179c2a8b66349890f0f92fbaf3dd8110985bdb354a3ce181800d15d",
+    "expansao.js": "b08a6a4439b26e09148d8f9cd15410792f63b0a99330f2031d1ac1e59e315a96",
+    "estrutura.html": "92ec8b8e3ba9e1a886c4e9feb48b914ab32bda1a0c89e0073c2d232201058514"
+  }
+}

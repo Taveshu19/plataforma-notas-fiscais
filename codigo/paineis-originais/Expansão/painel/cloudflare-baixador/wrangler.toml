@@ -1,0 +1,9 @@
+name = "painel-baixador"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+compatibility_flags = ["nodejs_compat"]
+
+# Browser Rendering (plano grátis): "imprime" em PDF a página de nota dos portais que não
+# entregam PDF (ex: ISSNet Ribeirão Preto). Ver src/index.js.
+browser = { binding = "BROWSER" }

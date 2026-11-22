@@ -1,0 +1,135 @@
+/* Proposta visual local · 12/11/2026. Apenas apresentação; scripts originais intactos. */
+body.cx-experiencia{
+ --cx-bg:#eef2f8;--cx-rail:#101d34;
+ --cx-radius:12px;
+ padding-left:208px;
+}
+:root:not([data-theme=claro]) body.cx-experiencia{
+ --cx-bg:#0d1421;--cx-card:#151f30;--cx-subtle:#1c2940;--cx-border:#2e3c53;
+ --cx-text:#edf3ff;--cx-muted:#a8b7ce;--cx-blue:#95b9ff;--cx-blue-soft:#23395d;
+}
+:root[data-theme=claro] body.cx-experiencia{
+ --cx-bg:#eef2f8;--cx-card:#fff;--cx-subtle:#f3f6fb;--cx-border:#dbe3ef;
+ --cx-text:#192b46;--cx-muted:#5e7089;--cx-blue:#245bcc;--cx-blue-soft:#eaf0ff;
+}
+body.cx-experiencia #cxAbas{width:208px;padding:24px 14px 16px;background:linear-gradient(165deg,#152943,#101a2d 65%);border-right:1px solid #ffffff0d}
+body.cx-experiencia .cx-marca{font:800 25px Manrope,var(--sans);letter-spacing:-1px;margin-bottom:28px;padding:0 10px}
+body.cx-experiencia .cx-nav-rotulo{font:600 11px var(--sans);letter-spacing:.09em;text-transform:uppercase;color:#a6b9d6;margin:0 0 16px}
+body.cx-experiencia .cx-nav-rotulo::after{width:24px;margin-top:12px;background:#6094f8}
+body.cx-experiencia #cxAbas button{padding:12px 10px;border-radius:9px;font-size:12px;min-height:44px}
+body.cx-experiencia #cxAbas button.ativa{background:#2c62d8;box-shadow:0 5px 16px #0002}
+body.cx-experiencia .cx-nav-pessoa{margin-top:auto;padding:18px 5px 0}
+body.cx-experiencia .topbar{height:auto;min-height:60px;padding:12px 24px;background:var(--cx-card);gap:16px}
+body.cx-experiencia .topbar-row{min-width:0;gap:12px}
+body.cx-experiencia .user-box{flex-wrap:wrap;justify-content:flex-end;gap:7px}
+body.cx-experiencia .user-box button{border-radius:7px;padding:7px 10px;background:var(--cx-subtle);font-size:11px;min-height:32px}
+body.cx-experiencia #cxArea{max-width:none;width:100%;box-sizing:border-box;padding:20px 24px 24px}
+body.cx-experiencia #cxAviso{padding:7px 24px}
+body.cx-experiencia .cx-editorial{display:block;margin:0 0 16px}
+body.cx-experiencia .cx-editorial-texto{padding:0}
+body.cx-experiencia .cx-resumo-linear{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0}
+body.cx-experiencia .cx-resumo-linear span{min-width:0;padding:15px 18px;gap:6px;border-radius:12px;position:relative;overflow:hidden;box-shadow:0 3px 12px #10244605;font-size:12px;border-top:3px solid #477feb}
+body.cx-experiencia .cx-resumo-linear span:nth-child(2){border-top-color:#38a69a}
+body.cx-experiencia .cx-resumo-linear span:nth-child(3){border-top-color:#8b83dd}
+body.cx-experiencia .cx-resumo-linear b{font:750 32px/1.1 Manrope,var(--sans);font-variant-numeric:tabular-nums;letter-spacing:-1px}
+body.cx-experiencia .cx-mesa{padding-top:0;border-top:0;gap:14px}
+body.cx-experiencia .cx-etapas{gap:6px;padding:5px;border:1px solid var(--cx-border);border-radius:11px;background:var(--cx-card)}
+body.cx-experiencia .cx-etapas button,body.cx-experiencia .cx-etapas button:last-child{flex:1 1 auto;justify-content:center;padding:10px 12px;border:0;border-radius:7px;background:transparent;min-height:40px;font-size:12px}
+body.cx-experiencia .cx-etapas button.active{background:var(--cx-blue-soft);color:var(--cx-blue);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--cx-blue) 22%,transparent)}
+body.cx-experiencia .cx-etapa-nome{flex:initial}
+body.cx-experiencia .cx-etapas button b{padding:3px 6px;border-radius:5px;background:var(--cx-subtle)}
+body.cx-experiencia .cx-fila{padding:18px 18px 0;border-radius:12px;box-shadow:0 4px 20px #10244605}
+body.cx-experiencia .cx-fila-cabeca{margin-bottom:14px;align-items:center}
+body.cx-experiencia .cx-fila-cabeca h3,body.cx-experiencia .cx-colecao-cabeca h3{font:750 23px/1.2 Manrope,var(--sans);letter-spacing:-.6px;margin:0}
+body.cx-experiencia .cx-total-fila{font-size:17px;color:var(--cx-blue)}
+body.cx-experiencia .cx-total-fila small{font-size:11px;margin-top:4px}
+body.cx-experiencia .cx-ferramentas{gap:12px;margin-bottom:12px}
+body.cx-experiencia .cx-pesquisa{max-width:none;border:1px solid var(--cx-border);background:var(--cx-subtle);border-radius:8px;padding:0 12px}
+body.cx-experiencia .cx-busca{padding:10px 0;font-size:12px;min-width:0;width:100%}
+body.cx-experiencia .cx-filtros{gap:10px;padding:12px;border:1px solid var(--cx-border);border-radius:9px;background:var(--cx-subtle);margin-bottom:14px}
+body.cx-experiencia .cx-filtros label{font-size:11px}
+body.cx-experiencia .cx-filtros :is(select,input){border-radius:6px;min-height:34px;font-size:12px}
+body.cx-experiencia .cx-btn{border-radius:7px;font-size:12px;padding:8px 12px}
+body.cx-experiencia .cx-btn.forte{background:#2860d5;border-color:#2860d5;color:white}
+body.cx-experiencia .cx-quadro-rolagem,body.cx-experiencia .cx-rolagem{border-radius:9px;margin-bottom:12px;max-height:calc(100dvh - 370px);min-height:120px}
+body.cx-experiencia .cx-quadro thead th{padding:12px 10px;font-size:10px;letter-spacing:.02em;background:var(--cx-subtle)}
+body.cx-experiencia .cx-quadro td{padding:8px 10px}
+body.cx-experiencia .cx-quadro tbody tr:nth-child(even) td{background:color-mix(in srgb,var(--cx-subtle) 50%,var(--cx-card))}
+body.cx-experiencia .cx-quadro tbody tr:hover td{background:var(--cx-blue-soft)}
+body.cx-experiencia .cx-quadro .cx-cel{min-height:34px}
+body.cx-experiencia .cx-fila-rodape{padding:8px 0}
+body.cx-experiencia .cx-editorial-compras{display:flex;justify-content:flex-end;margin-bottom:14px}
+body.cx-experiencia .cx-compras-convite{padding:0;border:0;display:flex;flex-direction:row;gap:16px;align-items:center}
+body.cx-experiencia .cx-convite-simbolo{display:none}
+body.cx-experiencia .cx-compras-convite p{font-size:12px}
+body.cx-experiencia .cx-compras-convite .cx-btn{width:auto;white-space:nowrap}
+body.cx-experiencia .cx-fases{gap:12px;border:0;margin-bottom:20px}
+body.cx-experiencia .cx-fase,body.cx-experiencia .cx-fase:first-child{padding:14px 16px;border:1px solid var(--cx-border);border-radius:10px;background:var(--cx-card)}
+body.cx-experiencia .cx-fase.ativo{background:var(--cx-blue-soft);border-color:var(--cx-blue)}
+body.cx-experiencia .cx-fase.ativo::after{display:none}
+body.cx-experiencia .cx-fase-topo{margin-bottom:8px}
+body.cx-experiencia .cx-fase-corpo>b{font:750 30px Manrope,var(--sans)}
+body.cx-experiencia .cx-requisicoes>.cx-ferramentas{margin-bottom:12px}
+body.cx-experiencia .cx-fichas{grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+body.cx-experiencia .cx-ficha{border-radius:12px;overflow:hidden}
+body.cx-experiencia .cx-ficha-topo{padding:12px 16px}
+body.cx-experiencia .cx-ficha-titulo{padding:16px}
+body.cx-experiencia .cx-ficha-titulo h3{font:700 21px/1.25 Manrope,var(--sans);min-height:0;letter-spacing:-.4px}
+body.cx-experiencia .cx-ficha-dados{padding:12px 16px;gap:12px}
+body.cx-experiencia .cx-ficha-rodape{padding:10px 16px}
+body.cx-experiencia .cx-dialogo{border-radius:14px}
+body.cx-experiencia .cx-dialogo h3{font-family:Manrope,var(--sans);font-size:26px}
+body.cx-experiencia :is(button,input,select,textarea,a):focus-visible,
+body.cx-experiencia #cxArea :is(input,select,textarea):focus-visible{outline:2px solid var(--cx-blue);outline-offset:2px}
+body.cx-experiencia .wrap{padding:16px 24px 32px}
+body.cx-experiencia .stats-row{padding:16px 24px;gap:10px}
+body.cx-experiencia .toolbar{padding:12px 24px;gap:8px}
+body.cx-experiencia .kpi-card{border-radius:10px}
+@media(min-width:1800px){
+ body.cx-experiencia #cxArea{padding:24px 32px}
+ body.cx-experiencia .cx-fichas{grid-template-columns:repeat(auto-fit,minmax(330px,1fr))}
+}
+@media(max-width:1000px){
+ body.cx-experiencia{padding-left:0}
+ body.cx-experiencia #cxAbas{position:relative;inset:auto;width:100%;padding:12px 18px;display:flex;flex-direction:row;align-items:center;gap:16px}
+ body.cx-experiencia .cx-marca{margin:0;font-size:21px}
+ body.cx-experiencia .cx-nav-links{flex:1;flex-direction:row;flex-wrap:wrap;gap:4px}
+ body.cx-experiencia #cxAbas button{width:auto;flex:1}
+ body.cx-experiencia .cx-nav-rotulo,body.cx-experiencia .cx-nav-pessoa{display:none}
+ body.cx-experiencia .topbar{padding:10px 18px}
+ body.cx-experiencia .cx-quadro-rolagem{max-height:65dvh}
+}
+@media(max-width:600px){
+ body.cx-experiencia #cxArea{padding:14px 12px}
+ body.cx-experiencia #cxAbas{flex-wrap:wrap;gap:10px;padding:12px}
+ body.cx-experiencia .cx-nav-links{flex-basis:100%}
+ body.cx-experiencia .topbar-row{flex-wrap:wrap!important}
+ body.cx-experiencia .user-box{justify-content:flex-start}
+ body.cx-experiencia .topbar{height:auto;min-height:58px;padding:10px 12px;flex-wrap:wrap}
+ body.cx-experiencia .cx-resumo-linear{gap:7px}
+ body.cx-experiencia .cx-resumo-linear span{padding:12px 9px;font-size:10px;line-height:1.4}
+ body.cx-experiencia .cx-resumo-linear b{font-size:27px}
+ body.cx-experiencia .cx-etapas{flex-wrap:nowrap;overflow-x:auto}
+ body.cx-experiencia .cx-etapas button,body.cx-experiencia .cx-etapas button:last-child{flex:0 0 auto;font-size:11px}
+ body.cx-experiencia .cx-fila{padding:14px 10px 0}
+ body.cx-experiencia .cx-fila-cabeca h3{font-size:20px}
+ body.cx-experiencia .cx-total-fila{font-size:13px}
+ body.cx-experiencia .cx-fases{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ body.cx-experiencia .cx-fichas{grid-template-columns:minmax(0,1fr)}
+ body.cx-experiencia .cx-ferramentas{flex-wrap:wrap}
+ body.cx-experiencia .cx-filtros{flex-wrap:wrap;padding:9px}
+ body.cx-experiencia .cx-filtros label{min-width:0;flex:1 1 130px}
+ body.cx-experiencia .wrap{padding:12px}
+}
+body.cx-outra-area .topbar-row>div:first-child::after{content:'Painel de expansão';font:700 14px Manrope,var(--sans);color:var(--cx-text)}
+body.cx-experiencia .cx-editorial-compras{justify-content:space-between;align-items:center}
+body.cx-experiencia .cx-editorial-compras::before{content:'Compras';font:750 24px Manrope,var(--sans);letter-spacing:-.6px;color:var(--cx-text)}
+@media(max-width:1000px){
+ body.cx-experiencia #cxAbas{height:auto;min-height:0;max-height:none;overflow:visible}
+ body.cx-experiencia .cx-nav-links{min-width:0}
+}
+@media(max-width:600px){
+ body.cx-experiencia #cxAbas button{font-size:10px;padding:10px 7px}
+ body.cx-experiencia .cx-editorial-compras::before{font-size:21px}
+ body.cx-outra-area .topbar-row>div:first-child::after{font-size:12px}
+}

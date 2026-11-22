@@ -1,0 +1,3 @@
+# Os geradores procuram trechos exatos do código (inclusive quebras de linha).
+# Por isso o Git não converte fim de linha: os arquivos ficam byte a byte como estão.
+* -text

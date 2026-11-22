@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Notas Fiscais · Administrativo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <!-- Mesma base visual da Expansão (ecossistema-visual), depois a camada de cor verde deste painel -->
+  <link rel="stylesheet" href="/visual/areas-novas.css">
+  <link rel="stylesheet" href="/visual/direcao.css">
+  <link rel="stylesheet" href="/visual/verde-notas.css">
+  <link rel="stylesheet" href="/notas.css">
+</head>
+<body class="cx-experiencia">
+  <nav id="cxAbas" role="tablist" aria-label="Áreas de trabalho"></nav>
+  <button id="cxNavAlternar" class="cx-recolher" type="button" aria-controls="cxAbas">‹ Recolher</button>
+
+  <div class="notas-topo">
+    <div id="notasAcesso"></div>
+    <button class="cx-btn cx-mini" id="notasTema" type="button" aria-pressed="false">Claro</button>
+  </div>
+  <dialog id="janela-login" aria-labelledby="login-titulo"><aside class="login-lateral"><div class="cx-entrada-marca">administrativo <small>EMPRESA EXEMPLO</small></div><div class="cx-entrada-mensagem"><span>UM NOVO ESPAÇO DE TRABALHO</span><h1>Do primeiro<br> documento<br> ao próximo<br> <em>passo.</em></h1><p>Notas fiscais da TAG: aprovação, pagamento e comprovantes.</p></div><small>EMPRESA EXEMPLO · ADMINISTRATIVO</small></aside><section class="login-conteudo"><span class="login-selo">EMPRESA EXEMPLO</span><h2 id="login-titulo">Entrar na TAG</h2><p>Use o seu e-mail e a sua senha.</p><form id="login-form" novalidate><label>E-mail<input name="email" type="email" autocomplete="username" required></label><label>Senha<input name="password" type="password" autocomplete="current-password" required></label><button class="cx-btn notas-btn" type="submit">Entrar</button></form><p><button class="cx-btn cx-mini" type="button" id="primeiro-acesso">Primeiro acesso ou esqueci minha senha</button></p><p><button class="cx-btn cx-mini" type="button" id="fechar-login">Fechar</button></p></section></dialog>
+
+  <main id="cxArea" aria-live="polite"><div class="cx-carregando-tela" role="status"><span class="cx-anel" aria-hidden="true"></span>Carregando as notas…</div></main>
+  <style>.cx-carregando-tela{display:flex;align-items:center;justify-content:center;gap:12px;min-height:50vh;font:500 15px Inter,system-ui,sans-serif;opacity:.85}.cx-carregando-tela .cx-anel{width:26px;height:26px;border-radius:50%;border:3px solid rgb(128 140 160 / .25);border-top-color:#23b26d;animation:cxGira .8s linear infinite}@keyframes cxGira{to{transform:rotate(360deg)}}</style>
+
+  <div id="drawer-root"></div>
+  <div class="notas-toast" id="toast" role="status" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

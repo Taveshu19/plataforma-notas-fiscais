@@ -1,0 +1,17 @@
+/* Cartões de notas em Aprovações: o mesmo cartão das requisições (.cx-ficha), com os campos da análise dentro. */
+.cx-fichas-notas{align-items:start}
+.cx-ficha-nota .cx-ficha-titulo{padding:18px 20px 10px;flex:none}
+.cx-ficha-nota .cx-ficha-titulo h3{font-size:22px;min-height:0;margin-top:8px;overflow-wrap:anywhere}
+.cx-ficha-nota .cx-ficha-dados{padding:12px 20px;gap:12px;border-top:1px solid var(--cx-border)}
+.cx-ficha-nota .cx-ficha-dados dd{overflow-wrap:anywhere}
+.cx-ficha-campos{display:grid;gap:12px;padding:14px 20px 16px;border-top:1px solid var(--cx-border);background:var(--cx-subtle)}
+.cx-ficha-campos .cx-campo{display:block;margin:0;font-size:10px;font-weight:500;color:var(--cx-muted)}
+.cx-ficha-campos .cx-duas{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cx-ficha-campos .cx-cel{display:block;margin-top:5px;border-color:var(--cx-border);background:var(--cx-card);color:var(--cx-text);font-size:12px}
+.cx-ficha-campos textarea.cx-cel{min-height:74px;resize:vertical;line-height:1.5}
+.cx-ficha-campos .cx-cel-leitura{max-width:none;white-space:normal;margin-top:5px;color:var(--cx-text)}
+.cx-ficha-nota .cx-ficha-rodape{gap:10px;flex-wrap:wrap}
+.cx-ficha-acoes{display:flex;gap:6px;align-items:center;margin-left:auto}
+@media(max-width:700px){.cx-ficha-campos .cx-duas{grid-template-columns:1fr}}
+body.cx-experiencia .cx-ficha-campos textarea.cx-cel{min-height:84px}
+.cx-quadro .cx-cel-lista{max-width:230px;text-overflow:ellipsis}

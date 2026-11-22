@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { identity, requireEditor, requestActor } from '../lib/access.mjs';
+const user = email => ({id:'test-user',email,email_confirmed_at:'2026-11-14'});
+const mock = (u,profile=[{must_change_password:false}]) => async url => ({ok:true,json:async()=>url.includes('/auth/')?u:profile});
+test('consulta anônima não pode escrever',async()=>{const a=await identity();assert.equal(a.canEdit,false);assert.throws(()=>requireEditor(a),{status:403});});
+for(const email of ['otavio.reis@holding.exemplo','backoffice@investidora.exemplo'])test('editor autorizado '+email,async()=>{const a=await identity('Bearer valid',mock(user(email)));assert.equal(a.canEdit,true);requireEditor(a);});
+test('outro e-mail não recebe edição',async()=>{assert.equal((await identity('Bearer valid',mock(user('outro@example.com')))).canEdit,false);});
+test('e-mail não confirmado ou usuário anônimo não edita',async()=>{for(const extra of [{email_confirmed_at:null},{is_anonymous:true}])assert.equal((await identity('Bearer valid',mock({...user('otavio.reis@holding.exemplo'),...extra}))).canEdit,false);});
+test('token inválido e perfil indisponível falham fechados',async()=>{await assert.rejects(identity('Bearer invalid',async()=>({ok:false})),{status:401});await assert.rejects(identity('invalid'),{status:401});await assert.rejects(identity('Bearer valid',async url=>({ok:url.includes('/auth/'),json:async()=>user('otavio.reis@holding.exemplo')})),{status:403});});
+test('primeiro acesso exige senha pessoal',async()=>{await assert.rejects(identity('Bearer valid',mock(user('otavio.reis@holding.exemplo'),[{must_change_password:true}])),{status:403});});
+test('operadores simultâneos mantêm identidade isolada',async()=>{const actors=await Promise.all(['otavio','bo'].map(email=>requestActor.run({email},async()=>{await new Promise(r=>setTimeout(r,5));return requestActor.getStore().email;})));assert.deepEqual(actors,['otavio','bo']);});

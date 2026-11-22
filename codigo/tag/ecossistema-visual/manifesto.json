@@ -1,0 +1,13 @@
+{
+  "origem": "codigo/site/copia-painel (Expansão, direção editorial, 06/11 e 12/11/2026)",
+  "arquivos": {
+    "direcao.css": {
+      "sha256": "d6b42ead1415c48998fea2f34f8f7ba3a421419c7c9bd200bc8287d917d1d7e8",
+      "bytes": 48779
+    },
+    "areas-novas.css": {
+      "sha256": "002045277dda585d10a7c12b97c3bf376cb5a9c63f510d2922e09727b27e283a",
+      "bytes": 10005
+    }
+  }
+}

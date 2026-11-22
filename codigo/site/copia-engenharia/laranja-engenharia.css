@@ -1,0 +1,39 @@
+/* Engenharia: o mesmo painel da Expansão, azul, preto e branco, com pequenos detalhes em laranja.
+   Só entra cor aqui: forma, fontes, posições e tamanhos continuam os do direcao.css.
+   Laranja da marca da Engenharia (CLAUDE.md do painel): #e8792e no escuro e #b94a0b no claro (contraste medido). */
+body.cx-experiencia{--cx-laranja:#f08a3c;--cx-laranja-forte:#e8792e}
+:root[data-theme=claro] body.cx-experiencia{--cx-laranja:#b94a0b;--cx-laranja-forte:#e8792e}
+
+/* Marca e menu lateral */
+body.cx-experiencia .cx-marca-simbolo i{background:#e8792e}
+body.cx-experiencia .cx-nav-traco{background:#e8792e}
+body.cx-experiencia .cx-presenca{background:#e8792e}
+body.cx-experiencia #cxAbas button.ativa{box-shadow:inset 3px 0 #e8792e}
+
+/* Títulos e marcadores */
+body.cx-experiencia .cx-editorial h2 em{color:var(--cx-laranja)}
+body.cx-experiencia .cx-editorial-texto>.cx-kicker>span:first-child{color:var(--cx-laranja)}
+body.cx-experiencia .cx-etapas button.active{box-shadow:inset 0 -2px var(--cx-laranja-forte)}
+body.cx-experiencia .cx-etapas button.active .cx-etapa-indice{color:var(--cx-laranja);opacity:1}
+body.cx-experiencia .cx-quadro thead th{border-bottom:2px solid var(--cx-laranja-forte)}
+
+/* Bloco de destaque da fila (o azul continua, com um filete laranja) */
+body.cx-experiencia .cx-foco{border-top:3px solid #e8792e}
+body.cx-experiencia .cx-foco-orbita,body.cx-experiencia .cx-foco-orbita::before,body.cx-experiencia .cx-foco-orbita::after{border-color:#e8792e55}
+
+/* Foco do teclado */
+body.cx-experiencia :focus-visible{outline-color:var(--cx-laranja-forte)}
+
+/* Entrada da demonstração */
+.cx-entrada-mensagem h1 em{color:#ffa05c}
+.cx-entrada::after{border-color:#e8792e66}
+body.cx-preview #cxEntrarComo button:hover{border-color:#e8792e;background:#fff7f1}
+body.cx-experiencia .cx-visoes button[aria-pressed=true]{box-shadow:inset 0 -2px var(--cx-laranja-forte)}
+
+/* Padrão visual de Expansão: laranja restrito à identificação da área. */
+body.cx-experiencia #cxAbas button.ativa{box-shadow:none}
+body.cx-experiencia .cx-etapas button.active{box-shadow:inset 0 -2px var(--cx-blue)}
+body.cx-experiencia .cx-etapas button.active .cx-etapa-indice{color:inherit;opacity:.7}
+body.cx-experiencia .cx-quadro thead th{border-bottom:1px solid var(--cx-border)}
+body.cx-experiencia :focus-visible{outline-color:var(--cx-blue)}
+body.cx-experiencia .cx-visoes button[aria-pressed=true]{box-shadow:inset 0 -2px var(--cx-blue)}

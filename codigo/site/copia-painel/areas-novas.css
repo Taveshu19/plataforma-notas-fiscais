@@ -1,0 +1,150 @@
+#cxAviso{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;margin:14px 28px 0;padding:9px 14px;border:1px solid var(--amber);border-radius:10px;background:var(--amber-soft);color:var(--ink);font-size:12.5px}
+#cxAviso[hidden]{display:none}
+#cxAviso b{color:var(--amber)}
+#cxAviso label{display:inline-flex;align-items:center;gap:8px;font-weight:600}
+#cxAviso select,#cxAviso button{font:inherit;padding:5px 9px;border-radius:7px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
+#cxAbas{display:flex;gap:8px;margin:14px 28px 0;border-bottom:1px solid var(--line)}
+#cxAbas[hidden]{display:none}
+#cxAbas button{font:600 14px var(--display,inherit);padding:11px 16px;border:0;border-bottom:3px solid transparent;background:none;color:var(--ink-soft);cursor:pointer;display:flex;gap:8px;align-items:center}
+#cxAbas button:hover{color:var(--ink)}
+#cxAbas button.ativa{color:var(--ink);border-bottom-color:var(--brand-blue)}
+#cxAbas button[data-area=compras]{margin-left:auto}
+#cxAbas button[data-area=compras].ativa{border-bottom-color:var(--teal)}
+#cxAbas button:focus-visible,#cxArea button:focus-visible,#cxModal button:focus-visible{outline:2px solid var(--brand-blue-bright);outline-offset:2px}
+.cx-num{font-size:11px;padding:1px 7px;border-radius:99px;background:var(--brand-blue-soft);color:var(--brand-blue-bright)}
+#cxArea{padding:20px 28px 40px;color:var(--ink)}
+#cxArea[hidden]{display:none}
+body.cx-outra-area #viewPainelTopo,body.cx-outra-area #stickyTopo,body.cx-outra-area #drillChip,body.cx-outra-area #mesesEnviados,body.cx-outra-area #viewPainelTabela,body.cx-outra-area #viewAnalytics,body.cx-outra-area #presenceBar{display:none!important}
+.topbar .eyebrow,#monitor2Btn{display:none!important}   /* assistente Claude volta a aparecer (16/11/2026, pedido do Gustavo) */
+.cx-cabeca{display:flex;justify-content:space-between;gap:16px;align-items:flex-end;margin-bottom:16px}
+.cx-cabeca h2{margin:0;font:700 22px var(--display,inherit)}
+.cx-cabeca p,.cx-sub{margin:4px 0 0;color:var(--ink-soft);font-size:13px}
+.cx-cabeca.compras h2{color:var(--teal)}
+.cx-busca{width:100%;max-width:420px;margin:14px 0;padding:9px 12px;border-radius:8px;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);font:inherit}
+.cx-tabela{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:13px}
+.cx-tabela th::before,.cx-tabela th::after{display:none!important}
+.cx-tabela th{text-align:left!important;padding:10px 12px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);border-bottom:1px solid var(--line)}
+.cx-tabela td{padding:11px 12px;border-bottom:1px solid var(--line-soft);vertical-align:middle}
+.cx-tabela tr:last-child td{border-bottom:0}
+.cx-tabela small{display:block;color:var(--ink-soft);margin-top:2px}
+.cx-vazio{padding:34px;text-align:center;color:var(--ink-soft);background:var(--panel);border:1px dashed var(--line);border-radius:10px}
+.cx-etq{display:inline-block;padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:600;background:var(--brand-blue-soft);color:var(--brand-blue-bright);white-space:nowrap}
+.cx-etq.verde{background:var(--green-soft);color:var(--green)}
+.cx-etq.ambar{background:var(--amber-soft);color:var(--amber)}
+.cx-etq.rosa{background:var(--rose-soft);color:var(--rose)}
+.cx-btn{font:600 13px inherit;font-family:inherit;padding:8px 13px;border-radius:8px;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);cursor:pointer}
+.cx-btn:hover:not(:disabled){background:var(--surface-hover)}
+.cx-btn.forte{background:var(--brand-blue-strong);border-color:var(--brand-blue-strong);color:#fff}
+.cx-btn.forte:hover:not(:disabled){background:var(--brand-blue-strong);filter:brightness(1.1)}
+.cx-btn:disabled{opacity:.45;cursor:not-allowed}
+#cxModal{position:fixed;inset:0;z-index:9000;display:flex;align-items:flex-start;justify-content:center;padding:4vh 16px;background:rgb(0 0 0 / .55);overflow:auto}
+#cxModal[hidden]{display:none}
+.cx-dialogo{position:relative;width:min(980px,100%);padding:22px;border-radius:14px;background:var(--panel);border:1px solid var(--line);color:var(--ink)}
+.cx-dialogo h3{margin:0 40px 16px 0;font:700 19px var(--display,inherit)}
+.cx-dialogo h4{margin:0 0 8px;font-size:15px}
+.cx-fechar{position:absolute;top:14px;right:14px}
+.cx-duas{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cx-caixa{padding:16px;border:1px solid var(--line);border-radius:10px;background:var(--panel-2);min-width:0}
+.cx-fatos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.cx-fatos span{display:block;font-size:11px;color:var(--ink-soft)}
+.cx-campo{display:block;margin:10px 0;font-size:12.5px;font-weight:600}
+.cx-campo input,.cx-campo select,.cx-campo textarea{display:block;width:100%;margin-top:5px;padding:9px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-family:inherit;font-size:13px;font-weight:400;box-sizing:border-box}
+.cx-campo textarea{min-height:76px;resize:vertical}
+.cx-acoes{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.cx-nota{margin-top:12px;padding:10px 12px;border-radius:8px;background:var(--brand-blue-soft);font-size:12.5px;color:var(--ink)}
+.cx-aviso-perm{margin:8px 0;font-size:12.5px;color:var(--amber)}
+.cx-hist{margin:6px 0 0;padding-left:18px;font-size:12.5px;color:var(--ink-soft)}
+#cxToast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:9500;padding:11px 16px;border-radius:9px;background:var(--panel);border:1px solid var(--brand-blue);color:var(--ink);font-size:13px;box-shadow:0 8px 24px rgb(0 0 0 / .35)}
+#cxToast[hidden]{display:none}
+#cxEntrarComo{margin-top:14px;display:grid;gap:6px}
+#cxEntrarComo p{margin:0 0 2px;font-size:12px;color:var(--ink-soft);text-align:center}
+#cxEntrarComo button{font:600 12.5px inherit;font-family:inherit;padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel-2);color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;gap:12px}
+#cxEntrarComo button span{font-weight:400;color:var(--ink-soft)}
+@media(max-width:760px){.cx-duas{grid-template-columns:1fr}#cxAviso,#cxAbas{margin-left:12px;margin-right:12px}#cxArea{padding:16px 12px 32px}#cxAbas{overflow-x:auto}.cx-tabela{display:block;overflow-x:auto}}
+.cx-cartao{font-family:inherit;color:inherit;text-align:left;cursor:pointer;width:100%}
+.cx-cartao.ativo{outline:2px solid var(--brand-blue-bright);outline-offset:2px}
+.cx-cartao:focus-visible{outline:2px solid var(--brand-blue-bright);outline-offset:2px}
+.cx-link{border:0;padding:0;background:none;color:var(--brand-blue-bright);font:inherit;text-decoration:underline;cursor:pointer}
+.cx-rolagem{overflow-x:auto;border-radius:10px}
+.cx-tabela.larga{min-width:1320px}
+.cx-anexos{display:flex;align-items:center;gap:6px}
+.cx-btn.cx-mini{padding:4px 8px;font-size:11.5px}
+.cx-bloco-anexo{padding:8px 0;border-top:1px solid var(--line-soft);font-size:13px}
+.cx-email{margin-top:8px;padding:10px 12px;border-radius:8px;background:var(--brand-blue-soft);font-size:12.5px}
+.cx-email small{display:block;margin-top:4px;color:var(--ink-soft)}
+.cx-tabela{table-layout:auto!important}
+.cx-tabela th{white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+.cx-tabela.larga td:first-child{min-width:230px}
+.cx-tabela.larga th,.cx-tabela.larga td{padding-left:8px;padding-right:8px}
+.cx-tabela.larga td:first-child{min-width:200px}
+.cx-arq{position:relative;flex:none;width:34px;height:44px;padding:0;overflow:hidden;border:1px solid var(--line);border-radius:5px;background:var(--panel-2);color:var(--ink-soft);font-family:inherit;font-size:8.5px;font-weight:700;cursor:pointer}
+.cx-arq.media{width:64px;height:84px;font-size:11px}
+.cx-arq img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;background:#fff}
+.cx-arq:hover{border-color:var(--brand-blue-bright)}
+.cx-arq:focus-visible,.cx-mais:focus-visible,#cxGaveta button:focus-visible{outline:2px solid var(--brand-blue-bright);outline-offset:1px}
+.cx-mais{flex:none;border:0;padding:2px 3px;background:none;color:var(--brand-blue-bright);font-family:inherit;font-size:12px;font-weight:700;cursor:pointer}
+.cx-anexos{min-height:44px}
+.cx-tabela.larga .cx-mini{padding:3px 7px}
+.cx-grade{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.cx-item{width:72px;min-width:0}
+.cx-item small{display:block;margin-top:3px;font-size:10.5px;color:var(--ink-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#cxGaveta{position:fixed;top:0;right:0;bottom:0;z-index:9200;display:flex;flex-direction:column;width:min(var(--cx-drawer,620px),100vw);background:var(--panel);border-left:1px solid var(--line);box-shadow:-12px 0 32px rgb(0 0 0 / .4);color:var(--ink)}
+#cxGaveta[hidden]{display:none}
+.cx-gav-topo{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:14px 16px;border-bottom:1px solid var(--line)}
+.cx-gav-topo>div{min-width:0}
+.cx-gav-topo b{display:block;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cx-gav-topo small{color:var(--ink-soft);font-size:11.5px}
+.cx-gav-acoes{display:flex;align-items:center;gap:8px;padding:9px 16px;border-bottom:1px solid var(--line-soft)}
+.cx-visor{flex:1;overflow:auto;padding:12px;background:var(--panel-deep)}
+.cx-visor canvas,.cx-visor img{display:block;max-width:100%;height:auto;margin:0 auto 10px;background:#fff;box-shadow:0 2px 10px rgb(0 0 0 / .3)}
+.cx-visor canvas{width:100%}
+.cx-btn.cx-perigo{background:var(--rose-strong);border-color:var(--rose-strong);color:#fff}
+
+/* Com o painel lateral aberto, o diálogo da nota fica à esquerda dele, sem cobrir o formulário. */
+body.cx-gaveta-aberta #cxModal{padding-right:calc(min(var(--cx-drawer,620px),100vw) + 16px)}
+#cxGavAlca{position:fixed;top:0;bottom:0;right:620px;width:10px;margin-right:-5px;cursor:ew-resize;z-index:9201;touch-action:none;display:none}
+body.cx-gaveta-aberta #cxGavAlca{display:block}
+body.cx-gaveta-aberta #cxGavAlca:hover,body.cx-ajustando-gaveta #cxGavAlca{background:linear-gradient(90deg,transparent 3px,rgb(120 170 255 / .55) 3px,rgb(120 170 255 / .55) 5px,transparent 5px)}
+body.cx-ajustando-gaveta,body.cx-ajustando-gaveta *{cursor:ew-resize!important;user-select:none}
+@media(max-width:600px){#cxGavAlca{display:none!important}}
+body.cx-gaveta-aberta .cx-dialogo{width:min(980px,100%)}
+@media(max-width:1100px){body.cx-gaveta-aberta #cxModal{padding-right:0}body.cx-gaveta-aberta #cxModal{display:none}}
+
+/* Largura das colunas (16/11/2026): borda arrastável no cabeçalho, como no Excel. */
+.cx-quadro thead th{position:sticky}
+.cx-redim{position:absolute;top:0;right:-4px;bottom:0;width:9px;cursor:col-resize;z-index:3;touch-action:none}
+.cx-redim:hover,body.cx-ajustando-coluna .cx-redim{background:linear-gradient(90deg,transparent 3px,rgb(120 170 255 / .6) 3px,rgb(120 170 255 / .6) 5px,transparent 5px)}
+body.cx-ajustando-coluna,body.cx-ajustando-coluna *{cursor:col-resize!important;user-select:none}
+@media(max-width:600px){.cx-redim{display:none}}
+
+.cx-nota-clicavel{ cursor:pointer; }
+.cx-nota-clicavel:hover td{ background:var(--cx-subtle); }
+
+/* Prévia do envio por e-mail em lote (18/11/2026): lista à esquerda; a tabela como chegaria, à direita, ao passar o mouse. */
+.cx-lote-grade{display:grid;grid-template-columns:minmax(230px,1fr) minmax(0,2fr);gap:18px;align-items:start;margin:12px 0}
+.cx-lote-lista{list-style:none;margin:0;padding:0}
+.cx-lote-item{padding:10px 12px;border:1px solid var(--line,#252a33);border-radius:8px;margin-bottom:8px;cursor:pointer;background:var(--panel,transparent)}
+.cx-lote-item:hover,.cx-lote-item:focus{border-color:#2f5233;outline:none}
+.cx-lote-parado{opacity:.6;cursor:default}
+.cx-lote-notas{list-style:none;margin:6px 0 0;padding:0}
+.cx-lote-nota{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:4px 0;border-top:1px dashed var(--line,#252a33);font-size:12px}
+.cx-lote-nota span{min-width:0;overflow-wrap:anywhere}
+.cx-lote-menos{min-width:28px;font-weight:700}
+.cx-lote-pendente{opacity:.75}
+.cx-lote-previa{min-width:0;max-height:60vh;overflow:auto;border:1px solid var(--line,#252a33);border-radius:10px;padding:14px;background:#fff;color:#222}
+.cx-lote-tabela{overflow-x:auto}
+.cx-lote-escrituracao{align-items:center;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.cx-lote-grade{grid-template-columns:1fr}}
+/* A prévia mostra a tabela como o e-mail (fundo branco, cabeçalho verde), mesmo com o painel no tema escuro. */
+.cx-lote-previa table{background:#fff!important;color:#222!important;border-collapse:collapse!important;width:100%!important;min-width:820px!important;font-size:12px!important}
+.cx-lote-previa td{background:#fff!important;color:#222!important;border:1px solid #999!important;padding:6px!important;font-size:12px!important;white-space:normal!important;vertical-align:top!important;text-align:left!important}
+.cx-lote-previa th{background:#2f5233!important;color:#fff!important;border:1px solid #999!important;padding:6px!important;font-size:12px!important;white-space:normal!important;text-align:left!important}
+.cx-lote-previa p{color:#222!important}
+
+/* Prévia em quadro isolado: a tabela não herda o tema escuro do painel. */
+.cx-lote-previa{max-height:none;overflow:hidden}
+.cx-lote-iframe{display:block;width:100%;height:520px;border:0;border-radius:8px;background:#fff}
+
+/* 18/11/2026: linha do quadro clicável (abre a nota). */
+.cx-quadro tbody tr[data-nota]{cursor:pointer}
+.cx-quadro tbody tr[data-nota]:hover td{background:color-mix(in srgb, currentColor 6%, transparent)}

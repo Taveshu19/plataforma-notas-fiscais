@@ -1,0 +1,34 @@
+# Funções do banco Expansão (seu-projeto-expansao), como estão no ar em 20/11/2026.
+# verify_jwt = false: a função é chamada SEM login (Power Automate, gatilho do banco, esqueci minha senha, TAG).
+# Publicar sem esta configuração (ou sem --no-verify-jwt) liga a exigência de login e quebra quem chama a função.
+project_id = "seu-projeto-expansao"
+
+[functions.arquivo-monday]
+verify_jwt = false
+
+[functions.assistente]
+verify_jwt = true
+
+[functions.avisar-compras]
+verify_jwt = false
+
+[functions.baixar-link-direto]
+verify_jwt = true
+
+[functions.baixar-nota-link]
+verify_jwt = true
+
+[functions.controle-api]
+verify_jwt = false
+
+[functions.escriturar-painel]
+verify_jwt = false
+
+[functions.ler-documento]
+verify_jwt = true
+
+[functions.recuperar-senha]
+verify_jwt = false
+
+[functions.retorno-escrituracao]
+verify_jwt = false
