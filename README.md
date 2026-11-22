@@ -168,7 +168,7 @@ Os problemas reais e como foram resolvidos estão em [Desafios e lições](docs/
 
 ```
 ├── README.md                 ← você está aqui
-├── docs/                     ← documentação técnica (16 documentos) e imagens
+├── docs/                     ← documentação técnica (15 documentos) e imagens
 ├── codigo/
 │   ├── paineis-originais/    ← painel de lançamento (Expansão e Engenharia) e o Worker da Cloudflare
 │   ├── site/
